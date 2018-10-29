@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_2_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_2_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/Cake.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/Cookie.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/IceCream.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/interfaces/Dessert.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/service/DessertPlayer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/test.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/hust/DessertPlayerTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/SpringLearning.iml" afterPath="$PROJECT_DIR$/SpringLearning.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/xml/service/AnimalPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/xml/service/AnimalPlayer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-beans.xml" afterPath="$PROJECT_DIR$/target/classes/spring-beans.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,12 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="449">
-                <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+              <first_editor relative-caret-position="240">
+                <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -99,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DessertPlayer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DessertPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/service/DessertPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
@@ -161,9 +142,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/IceCream.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/edu/hust/DessertPlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/Cake.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/Cookie.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/service/DessertPlayer.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -643,7 +624,7 @@
       <updated>1540296291521</updated>
       <workItem from="1540296293086" duration="954000" />
       <workItem from="1540299438576" duration="3837000" />
-      <workItem from="1540775462343" duration="12833000" />
+      <workItem from="1540775462343" duration="13042000" />
     </task>
     <servers />
   </component>
@@ -680,7 +661,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17624000" />
+    <option name="totallyTimeSpent" value="17833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -1043,23 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="449">
-            <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/cancelMulti/domain/Cookie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1081,6 +1045,23 @@
             <element signature="e#864#865#0" expanded="true" />
             <element signature="e#899#900#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
