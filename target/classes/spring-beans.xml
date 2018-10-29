@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context">
+
+    <!-- 一般会设置一个id，id的值为类的名字首字母小写-->
+    <bean id="dog" class="cn.edu.hust.xml.domain.Dog" scope="singleton"/>
+
+    <!-- 这里的类有一个构造器的依赖,所以的需要使用xml来注入到这个类中
+         这里如果需要传递字面值,可以使用如下的方式传递
+    -->
+    <bean id="animalPlayer" class="cn.edu.hust.xml.service.AnimalPlayer">
+        <constructor-arg ref="dog"/>
+        <constructor-arg value="vivi"/>
+    </bean>
+
+</beans>
