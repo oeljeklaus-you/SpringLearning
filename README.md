@@ -7,7 +7,9 @@
  
  @Component注解表示一个组件
  
- 在XML配置中配置包的扫描,一般只是配置需要扫描的基础包,Spring可以扫描下面的子包了。具体的配置如下:
- [Spring配置包扫描](img/Spring配置包扫描.png)
+ 在XML配置中配置包的扫描,一般只是配置需要扫描的基础包,Spring可以扫描下面的子包了。
+ 
+ 具体的配置如下:
+ ![Spring配置包扫描](img/Spring配置包扫描.png)
 ### JavaConfig配置
  
