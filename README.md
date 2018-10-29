@@ -37,4 +37,69 @@
  两者方法混合更加好,需要根据不同的应用场景选择。
  
 ## 高级装配
+ 在生产过程中,我们会发现如下的情况,很多在开发环境可以使用的配置在实际的情况下却不能适应,那么我们如何更好的
+ 
+ 在开发环境和生产环境中切换呢？这里我们使用prefile文件进行环境的切换。
+ 
+### Java配置中切换
+ 这里需要使用@Profile注解进行切换,我们可以使用这个注解使用在不同的类上,Spring容器会根据不同的Profile来进行是否
+ 
+ 加载这个bean到Spring容器;当然在Spring3.1以后,我们可以将这个注解放在方法上面根据Profile的不同激活。
+ 
+### XML配置文件中切换
+
+ 我们可以将整个配置文件进行prfile化,我们可以将所有的profile bean装配在整个配置文件中,这里我们需要进行如下的配置:
+ ![profile装配的xml文件](profile装配的xml文件.png)
+
+ 当然,如果不方便的话,我们也可以使用的配置针对于同一个数据库连接管理池配置不同的bean,然后使用不同的profile激活
+ ![不同的profile激活](不同的profile激活.png) 
+ 
+#### 那么如何激活profile呢?
+ 可以设置两个属性来激活profile
+ 
+   spring.profiles.active 该属性是用来确定激活那个profle的
+   
+   spring.profiles.default 如果上面的属性没有设置,那么采用默认的激活
+   
+ 如果以上两个值均没有设置,那么将没有profile激活
+ 
+ 我们可以使用多个方式来设置两个值:
+  1.作为DispatchServlet的初始化参数
+  2.作为Web应用的上下文参数
+  3.作为JNDI条目
+  4.作为环境变量
+  5.作为JVM的系统属性
+  6.在集成测试类上,可以使用@ActiveProfiles来进行测试
+  
+ 我们可以在测试的时候使用@ActiveProfiles来激活profile
+ 
+### 条件化bean
+ 如果你需要指定某一个bean在满足某种条件下进行创建,你可以使用@Conditional注解来进行条件话bean。
+ 
+ @Conditional注解有一个属性classes来指定但满足某些条件的时候才开始实例化bean。
+ 
+ 内部的原理如下,如果满足条件,matches方法将会返回true;反之,则为
+ 
+ ![@Conditional注解内部原理.png](img/@Conditional注解内部原理.png)
+
+### 处理自动装配的歧义
+ 在工程目录文件内"cn.edu.hust.cancelMulti"包内进行处理自动装配的歧义demo
+ 
+ 有时候我们可能遇到这样的情况,如果实现某个接口的类不只一个,那么有个类需要依赖这个类,当需要注入的时候就会产生歧义.
+ 
+ 如何解决整个歧义呢? 歧义产生的错误是org.springframework.beans.factory.NoUniqueBeanDefinitionException
+ 
+ 对于经典的xml配置,我们可以在选定的bean中设置primary=true;如果在注解的配置中,我们可以配置@Primary
+ 
+#### 限定自动配置的bean
+ 上面的注解只是优先的选用哪一个bean,如果使用上面的注解或者在xml配置还是有歧义,我们应该怎么办呢?
+ 
+ 我们可以使用限定的注解来进行配置,具体配置如下
+ ![限定符注解配置](限定符注解配置.png)
+ 
+ 在实际的运行情况下,尽管我们可以配置了为一个@Primary注解,但是运行处理的结果还是@Qualifier注解配置的类的结果
+ 
+ 但是这里的@Qualifier需要指定类的ID,一般来说,类的id是类的首字母小写的单词,但是这个注解与id的名字是紧密耦合的
+ 
+ 所以我们可以现在选定的类上加上@Qualifier自定义一个合适的名字在进行注入.
  
