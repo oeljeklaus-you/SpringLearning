@@ -4,13 +4,15 @@
        xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:bean="http://www.springframework.org/schema/jdbc"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/jdbc
        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
        http://www.springframework.org/schema/aop
-       http://www.springframework.org/schema/aop/spring-aop.xsd"
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        profile="dev">
+    <context:property-placeholder></context:property-placeholder>
     <!--在xml中使用profile,只有在激活的文件和profile匹配时才能激活-->
     <!-- 一般会设置一个id，id的值为类的名字首字母小写
         有可能这里的类有类似于setter方法的注入,可以使用如下注解使用等
