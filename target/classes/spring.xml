@@ -6,6 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context">
 
+
     <!--使用包扫描这个配置开启包扫描-->
     <context:component-scan base-package="cn.edu.hust.autowriting"/>
 

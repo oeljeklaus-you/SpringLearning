@@ -1,5 +1,6 @@
 package cn.edu.hust.aop;
 
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
@@ -52,7 +53,7 @@ public class Person {
     }
 
     /**
-     * @AfterReturning注解表示方法执行之后返回之前执行该通知，
+     * @AfterReturning注解表示方法返回之后执行该通知，
      */
     @AfterReturning("watch()")
     public void back()
@@ -60,5 +61,31 @@ public class Person {
         System.out.println("the moive end,the person is back");
     }
 
+    /**
+     * 环绕通知，这里通知的效果结合了所有通知的类型
+     * @param proceedingJoinPoint
+     * 参数是必须要有的，当通知被执行后才将控制权给这个参数执行目标方法
+     * 这里需要注意的是必须调用这个方法proceed()否则后阻塞被通知方法的调用。
+     */
+    @Around("watch()")
+    public void full(ProceedingJoinPoint proceedingJoinPoint)
+    {
+        try
+        {
+            System.out.println("person call phone for ticket");
+            System.out.println("person need select seats");
+            int a=1/0;
+            proceedingJoinPoint.proceed();
+            System.out.println("the moive end,the person is back");
+        }
+        catch (Throwable e)
+        {
+            System.out.println("person need refund");
+        }
+        finally {
+            System.out.println("the person clap");
+        }
+
+    }
 
 }
