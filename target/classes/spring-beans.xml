@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:bean="http://www.springframework.org/schema/jdbc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:bean="http://www.springframework.org/schema/jdbc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/jdbc
-       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd"
+       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        profile="dev">
+    <context:property-placeholder></context:property-placeholder>
     <!--在xml中使用profile,只有在激活的文件和profile匹配时才能激活-->
     <!-- 一般会设置一个id，id的值为类的名字首字母小写
         有可能这里的类有类似于setter方法的注入,可以使用如下注解使用等
@@ -41,6 +44,11 @@
         <constructor-arg ref="dog"/>
     </bean>
 
+    <!--这里如果设置为false可以将cglib代理设置为jdk默认代理-->
+    <bean id="shoppingCart" class="cn.edu.hust.scope.ShoppingCart" scope="prototype">
+        <aop:scoped-proxy proxy-target-class="false"></aop:scoped-proxy>
+    </bean>
+
     <!--只有处于激活态的配置文件才可以使用-->
     <beans profile="dev">
         <bean:embedded-database id="dataSource">
@@ -58,4 +66,6 @@
             <property name="initialSize" value="10"></property>
         </bean>
     </beans>
+
+
 </beans>

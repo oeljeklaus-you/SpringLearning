@@ -1,0 +1,64 @@
+package cn.edu.hust.aop;
+
+import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.stereotype.Component;
+
+/**
+ *
+ * @Aspect注解表示将这个bean声明为一个切面
+ */
+@Component
+@Aspect
+public class Person {
+    /**
+     * @Pointcut注解表示切点，表示在哪里执行通知
+     * 下面这个方法并不是非必需的，只是为了减少下面的通知方法的匹配
+     */
+    @Pointcut("execution(* cn.edu.hust.aop.*.watch(..))")
+    public void watch(){}
+
+    /**
+     * @Before注解是前置通知，在目标方法之前执行
+     */
+    @Before("watch()")
+    public void call()
+    {
+        System.out.println("person call phone for ticket");
+    }
+
+    @Before("watch()")
+    public void selectSeat()
+    {
+        System.out.println("person need select seats");
+    }
+
+    /**
+     * @After注解表示后置通知，目标方法执行之后在执行通知
+     */
+    @After("watch()")
+    public void hclap()
+    {
+        System.out.println("the person clap");
+    }
+
+    /**
+     * @AfterThrowing表示出现异常以后执行该通知
+     */
+    @AfterThrowing("watch()")
+    public void refund()
+    {
+        System.out.println("person need refund");
+    }
+
+    /**
+     * @AfterReturning注解表示方法执行之后返回之前执行该通知，
+     */
+    @AfterReturning("watch()")
+    public void back()
+    {
+        System.out.println("the moive end,the person is back");
+    }
+
+
+}
