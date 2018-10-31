@@ -74,7 +74,7 @@ public class Person {
         {
             System.out.println("person call phone for ticket");
             System.out.println("person need select seats");
-            int a=1/0;
+            //int a=1/0;
             proceedingJoinPoint.proceed();
             System.out.println("the moive end,the person is back");
         }
