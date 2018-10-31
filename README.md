@@ -235,12 +235,14 @@
  关于Spring基于AspectJ的切点表达式如下:
  ![AspctJ切点表达式](img/AspctJ切点表达式.png)
  
-####编写切面
+#### 编写切面
  1。首先定义一个接口
- '''java
+ '''
+ 
  public interface Watch {
      void watch();
  }
+ 
  '''
  
  2。编写切面
