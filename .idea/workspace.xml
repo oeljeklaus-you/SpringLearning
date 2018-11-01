@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Audience.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/MoviePerformance.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Performance.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/hust/MoviePerformanceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/web/dispatch/SpittrWebAppInitiallizer.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/edu/hust/MoiveWatchTest.java" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/hust/MoiveWatchTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-beans.xml" afterPath="$PROJECT_DIR$/target/classes/spring-beans.xml" />
+      <change beforePath="$PROJECT_DIR$/SpringLearning.iml" afterPath="$PROJECT_DIR$/SpringLearning.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,12 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="319">
-                <caret line="286" column="35" lean-forward="false" selection-start-line="286" selection-start-column="35" selection-end-line="286" selection-end-column="35" />
+              <first_editor relative-caret-position="326">
+                <caret line="318" column="19" lean-forward="false" selection-start-line="318" selection-start-column="19" selection-end-line="318" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -50,28 +47,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-beans.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-beans.xml">
+      <file leaf-file-name="SpittrWebAppInitiallizer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/web/dispatch/SpittrWebAppInitiallizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="64" column="75" lean-forward="true" selection-start-line="64" selection-start-column="75" selection-end-line="64" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviePerformance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/MoviePerformance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#184#201#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,40 +67,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="94" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="68" lean-forward="false" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Audience.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Audience.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Performance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Performance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="183">
+              <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -171,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/person.properties" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/property/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/aop/Watch.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/aop/MoiveWatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/aop/Encorable.java" />
@@ -185,6 +139,8 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Performance.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-beans.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/hust/web/dispatch/SpittrWebAppInitiallizer.java" />
       </list>
     </option>
   </component>
@@ -239,10 +195,9 @@
     <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -298,11 +253,6 @@
             <path>
               <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -323,43 +273,6 @@
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hust" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hust" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlAOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hust" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -645,7 +558,7 @@
       <workItem from="1540775462343" duration="13241000" />
       <workItem from="1540899917980" duration="3618000" />
       <workItem from="1540947377928" duration="13663000" />
-      <workItem from="1541034696024" duration="2697000" />
+      <workItem from="1541034696024" duration="5035000" />
     </task>
     <servers />
   </component>
@@ -682,10 +595,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38010000" />
+    <option name="totallyTimeSpent" value="40348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -699,7 +612,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31076178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -731,14 +644,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cn/edu/hust/CDPlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1067,20 +972,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="94" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/Audience.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1103,15 +1000,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/xmlAOP/MoviePerformance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="197">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#184#201#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#184#201#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#286#287#0" expanded="false" />
+            <element signature="e#446#447#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1133,11 +1030,34 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="319">
-            <caret line="286" column="35" lean-forward="false" selection-start-line="286" selection-start-column="35" selection-end-line="286" selection-end-column="35" />
+          <first_editor relative-caret-position="326">
+            <caret line="318" column="19" lean-forward="false" selection-start-line="318" selection-start-column="19" selection-end-line="318" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/hust/web/dispatch/SpittrWebAppInitiallizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

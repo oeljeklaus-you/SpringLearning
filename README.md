@@ -286,4 +286,38 @@
  对于环绕通知类似与传递参数与注解，这里我们仅仅需要修改配置文件即可。
  ![aop xml配置传递参数](img/aop xml配置传递参数.png)
  
+## 构建Spring web引用程序
+### Spring MVC起步
+ Spring把请求在调度Servlet、处理器映射、控制器以及视图解析器之间移动；每一个Spring MVC中的组件都有特定
+ 
+ 的目的，并且它没有那么那么复杂。请求在SpringMVC的流程如下
+ ![请求在SpringMVC的流程](img/请求在SpringMVC的流程.png)
+ 
+ 请求的第一站首先要经过Spring的DispatchServlet，与大多数Java的web一样，Spring MVC的所有请求
+ 
+ 都会经过一个前端控制器Servlet。前端控制器是常用Web应用程序模式，在这里一个单实例的servlet将请求委托给
+ 
+ 应用程序的其他组件来执行实际处理，在SpringMVC中，DispatchServlet就是前端控制器。
+ 
+ DispatchServlet的任务是将请求发给Spring MVC的控制器，控制器是一个用于处理请求的Spring组件。由于
+ 
+ 控制器存在多个，首先要确定该请求交给哪一个控制器处理，这就首先要交给处理器映射器来进行请求的判断。
+ 
+ 处理器请求映射器根据请求携带的URL信息来进行决策。一旦决定由那个控制器来处理，DispatchServlet就直接交个
+ 
+ 这个控制器，然后处理完成后就会产生一些信息，这些信息需要返回给用户浏览器呈现给用户。这些信息称之为模型。
+ 
+ 控制器还需要做的一件是事情就是将模型数据打包，然后标出用于渲染的视图名，将这些信息发给DispatchServlet
+ 
+ 。DispatchServlet将会使用视图解析器来将逻辑视图来进行特定的视图实现，最后一步是视图的实现，进行视图渲染。
+ 
+#### 搭建Spring MVC
+ DispatchServlet是Spring MVC的核心，它负责将请求路由发送到其他组件中。
+ 
+ DsipatchServlet这样的Servlet可以配置在web.xml中，这个文件放置在war包里面。
+ 
+ 这里使用Java方式将DispatchServlet配置在web.xml文件中。
+ 
+  
+  
  
