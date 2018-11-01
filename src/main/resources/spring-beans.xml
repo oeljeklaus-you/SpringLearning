@@ -11,8 +11,9 @@
        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
-       profile="dev">
+       >
     <context:property-placeholder></context:property-placeholder>
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
     <!--在xml中使用profile,只有在激活的文件和profile匹配时才能激活-->
     <!-- 一般会设置一个id，id的值为类的名字首字母小写
         有可能这里的类有类似于setter方法的注入,可以使用如下注解使用等
@@ -48,6 +49,26 @@
     <bean id="shoppingCart" class="cn.edu.hust.scope.ShoppingCart" scope="prototype">
         <aop:scoped-proxy proxy-target-class="false"></aop:scoped-proxy>
     </bean>
+
+    <bean id="moviePerformance" class="cn.edu.hust.xmlAOP.MoviePerformance"/>
+
+    <bean id="audience" class="cn.edu.hust.xmlAOP.Audience"></bean>
+    <!--xml配置aop,aop配置元素必须在config内配置-->
+    <aop:config>
+        <aop:pointcut id="perform" expression="execution(* cn.edu.hust.*.*.perform(..))"/>
+        <aop:pointcut id="count" expression="execution(* cn.edu.hust.*.*.count(int)) and args(int)"/>
+        <!--声明切点，首先需要创建切面的bean-->
+        <aop:aspect ref="audience">
+            <!--这里配置切面内的切点，通知方法,由于通知方法都是一样的，我们可以抽离即可-->
+            <aop:before pointcut-ref="perform" method="turnOffCellPhone"/>
+            <aop:before pointcut-ref="perform" method="takeSeats"/>
+            <aop:after-returning pointcut-ref="perform" method="applause"/>
+            <aop:after-throwing pointcut-ref="perform" method="demandRefund"/>
+            <aop:around pointcut-ref="perform" method="watchPerformance"/>
+            <!--传递参数-->
+            <aop:before pointcut-ref="count" method="watchPerformance"/>
+        </aop:aspect>
+    </aop:config>
 
     <!--只有处于激活态的配置文件才可以使用-->
     <beans profile="dev">
