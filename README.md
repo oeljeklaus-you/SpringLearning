@@ -370,8 +370,28 @@
  如果需要验证表单的属性,可以使用如下的注解
  ![POJO对象添加注解](img/POJO对象添加注解.png)
  
+## 渲染视图
+### 理解视图渲染
+ 将控制器中请求处理的逻辑和视图中的渲染实现解耦是SpringMVC的重要特性。
+ 
+ 一般额，我们使用InternalResourceViewResolver的视图解析器。在它的配置中，为了得到视图的名字需要配置前置和后置。
+ 
+ SpringMVC定义了一个名为ViewResolver的接口,大致如下
+ ![ViewResolver的接口定义](img/ViewResolver的接口定义.png)
+ 当给接口中的方法传入一个视图名和Locale的对象时,返回一个View实例。View是另一个接口如下:
+ ![View](img/View.png)
+ View接口的任务是接收模型以及Servlet的request和response对象,然后将结果输出到response中渲染。
+ 
+ Spring自带13个视图解析器,能都将逻辑视图转化为物理视图:
+ ![13个视图解析器1](img/13个视图解析器1.png)
+ ![13个视图解析器2](img/13个视图解析器2.png)
+ 
+ InternalResourceResolver一般用于JSP,TilesViewRsovler用于Apache Tiles视图，而FreeMakerViewResovler
+ 
+ 和VelocityViewResolver分别对应FreeMaker和Velocity模板视图。
+ 
+ Thymeleaf是一种用于替代JSP的新兴技术,Spring提供用于ThymeLeaf的原生模板协作的视图解析器，它最终产生的HTML。
+### 创建JSP视图
  
  
-  
-  
  

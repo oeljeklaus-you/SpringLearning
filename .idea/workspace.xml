@@ -29,22 +29,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="334">
-                <caret line="370" column="29" lean-forward="false" selection-start-line="370" selection-start-column="29" selection-end-line="370" selection-end-column="29" />
+              <first_editor relative-caret-position="46">
+                <caret line="373" column="4" lean-forward="true" selection-start-line="373" selection-start-column="4" selection-end-line="373" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -249,37 +239,6 @@
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hust" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hust" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -567,7 +526,7 @@
       <workItem from="1541215992793" duration="2429000" />
       <workItem from="1541296144523" duration="1137000" />
       <workItem from="1541386025350" duration="218000" />
-      <workItem from="1541417424420" duration="1982000" />
+      <workItem from="1541417424420" duration="3842000" />
     </task>
     <servers />
   </component>
@@ -604,7 +563,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46751000" />
+    <option name="totallyTimeSpent" value="48611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1022,8 +981,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="334">
-            <caret line="370" column="29" lean-forward="false" selection-start-line="370" selection-start-column="29" selection-end-line="370" selection-end-column="29" />
+          <first_editor relative-caret-position="46">
+            <caret line="373" column="4" lean-forward="true" selection-start-line="373" selection-start-column="4" selection-end-line="373" selection-end-column="10" />
             <folding />
           </first_editor>
           <second_editor />
