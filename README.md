@@ -286,7 +286,7 @@
  对于环绕通知类似与传递参数与注解，这里我们仅仅需要修改配置文件即可。
  ![aop xml配置传递参数](img/aop xml配置传递参数.png)
  
-## 构建Spring web引用程序
+## 构建Spring web应用程序
 ### Spring MVC起步
  Spring把请求在调度Servlet、处理器映射、控制器以及视图解析器之间移动；每一个Spring MVC中的组件都有特定
  
@@ -317,6 +317,32 @@
  DsipatchServlet这样的Servlet可以配置在web.xml中，这个文件放置在war包里面。
  
  这里使用Java方式将DispatchServlet配置在web.xml文件中。
+ 
+ 对于一般的项目配置都在web.xml配置中,这里只是记录web.xml的配置,web.xml配置如下
+ ![web.xml配置](img/web.xml配置如下.png)
+ 
+ Spring一般需要加载两个Spring应用上下文,首先是我们这里配置SpringMVC的应用上下文
+ 
+ 然后这里需要配置视图解析器,将SpringMVC和Spring beans配置分开配置
+ ![视图解析器配置](img/视图解析器配置.png)
+ 
+ 对于一般的Spring Beans配置如下:
+ ![Spring一般bean的配置](img/Spring一般配置.png)
+ 
+### 编写一般的控制器
+ 编写一般额控制器，使用@Controller来声明控制器;在一般的方法中,使用@RequestMapping注解在方法中声明请求路径
+ ![一般的Controller](img/一般的Controller.png)
+ 
+ 在这个控制器中,返回的值表示需要渲染的视图名称 DispatchServlet要求视图解析器将这个逻辑的视图转化为实际视图
+ 
+ 如果觉得控制器的请求路径较大可以在类级别上使用@RequestMapping窄化请求路径。
+ 
+#### 数据模型传递到视图
+ 如果需要将参数传递到视图中，需要怎么解决呢?在上一节中,可以将数据放在Model中,然后在jsp中配置即可。
+ ![Model传递到视图](img/Model传递到视图.png)
+ 传递到视图需要注意的是页面jsp中,需要与上图中的model的名字一致,然后在jsp中使用${person.name}取值
+ 
+### 接收请求的参数
  
   
   

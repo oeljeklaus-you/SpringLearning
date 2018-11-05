@@ -1,5 +1,7 @@
 package cn.edu.hust.web.dispatch;
 
+import cn.edu.hust.web.config.RootConfig;
+import cn.edu.hust.web.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
