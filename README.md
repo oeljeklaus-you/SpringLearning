@@ -392,6 +392,33 @@
  
  Thymeleaf是一种用于替代JSP的新兴技术,Spring提供用于ThymeLeaf的原生模板协作的视图解析器，它最终产生的HTML。
 ### 创建JSP视图
+ Spring提供了两种支持JSP视图的方式:
+   1.InternalResourceViewResolver会将视图名解析为JSP文件。另外，在JSP使用JSTL标签库，InternalResourceViewResolver
+   
+   能够将视图名解析为JstlView形成的JSP文件,从而将JSTL本地化和资源bundle变量给JSTL的格式化和信息标签。
+   
+   2.Spring提供了两个JSP标签库,一个用于表单到模型的绑定,另一个提供了通用的工具类特性。
+#### 配置适用于JSP视图解析器
+ 有一些视图解析器,例如InternalResourceResolver会直接将视图名映射为特定的View的接口实现,
  
+ InternalResourceResolver所采取的方式并不直接，它遵循一种约定,会在视图名上添加前缀和后缀,进而确定
  
+ 一个Web应用中视图资源的物理路径。基于XML配置如下
+ ![视图解析器配置](img/视图解析器配置.png)
+ 
+ 当返回的视图有"/"时会将这个斜线带到资源路径中.
+
+ 如果这里想将一般的JSP使用JSTL标签来处理信息格式,我们需要使用InternalResourceViewResolver将视图解析为JstlView
+ 
+ 可以使用如下的配置,在原来的配置中设置它的viewClass即可
+ 
+#### 使用Spring中的JSP库
+ Spring提供了两个JSP标签库,用来帮助定义Spring MVC Web的视图.其中一个标签库会使用来渲染HTML表单标签
+ 
+ 这些标签可以绑定model中的某个属性。另一个标签库包含了一些工具类标签。
+ 
+ Spring的表单绑定JSP标签库包含14个标签,它们中的大多数都用来渲染HTML中的表单标签。
+ 
+ 首先我们必须在JSP中声明,具体如下:
+ ![Spring标签库配置](img/Spring标签库配置.png)
  
