@@ -441,4 +441,59 @@
   Spring的一些通用标签:
   ![Spring的一些通用标签](img/Spring的一些通用标签.png)
 ## SpringMVC的高级技术
+ 在了解完Spring基本的用法之后,我们可以解决基本的问题,但是还需学习比较高级的基础知识,我们在这一章继续学习。
+### 处理multipart形式的数据
+ 对于一般的参数提交,我们我们可以在提交路径中提交,以键值对进行,如果碰见多种键值对,那么可以使用&来进行分割
+ 
+ 但是对于二进制数据,那么就不可能,需要使用multipart格式来进行。
+ 
+ 如果需要上传文件,那么可能需要配置multipart解析器,通过它告诉DispatcherServlet如何读取multipart。
+#### 配置multipart解析器
+ DispatchServlet并没有实现任何解析multipart请求数据的功能。它将该任务委托给了Spring中的MultipartResolver
+ 
+ 策略接口的实现，通过实现类来解析multipart请求中的内容。Spring内置了两个MultipartResolver提供我们选择:
+ 
+ 1.CommonsMultipartResolver:使用Jackrta Commons FileUpload解析multipart请求
+ 
+ 2。StandardServletMultipartResolver：依赖Servlet3。0对multipart请求的支持
+ 
+ StandardServletMultipartResolver可能是更加优秀的选择,因为并不依赖于其他项目,如果Servlet3.0的容器，或者没有
+ 
+ Spring3。1那么就需要使用方案1。
+ 
+ 使用Servlet 3。0解析multipart请求,下面配置如下:
+ 
+ 1.首先在SpringMVC的xml文件中配置StandardServletMultipartResolver的bean,具体的配置如下:
+ ![StandardServletMultipartResolver的配置](img/StandardServletMultipartResolver配置.png)
+ 
+ 2.在web.xml配置中配置临时文件存储的位置,以及上传的文件最大大小和最小大小
+ ![在web.xml中配置文件上传大小以及存储位置](img/在web.xml中配置文件上传大小以及存储位置.png)
+ 
+ 3.处理multipart请求
+  对于一般的multipart上传处理,可以使用byte[]数组,保存在目标地址即可,但是我们可能需要想要的更多,Spring为我们
+  
+  提供了一个接口MultipartFile用来加载需要的信息,MultipartFile接口的定义:
+  ![MultipartFile接口](img/MultipartFile接口.png)
+  我们这里的处理信息如下:
+  ![文件上传处理](img/文件上传处理.png)
+  在数据处理部分,我们需要使用@Requestpart注解来接收请求的Multipart参数。
+  
+  在一般的情况下,我们可以使用Part接口与MultipartFile类似,具体方法如下:
+  ![Part接口](img/Part接口.png)
+  
+ 使用CommonsMultipartResolver解析multipart请求:
+ 1.首先要引用依赖的jar包,commons-io jar包和commons-uploadfile jar包
+ ![文件上传引入jar包](img/文件上传引入jar包.png)
+ 
+ 2.配置CommonsMultipartResolver的bean
+ ![配置CommonsMultipartResolver](img/配置CommonsMultipartResolver.png)
+ 
+ 3。处理multipart请求
+ ![文件上传处理](img/文件上传处理.png)
+   在数据处理部分,我们需要使用@Requestpart注解来接收请求的Multipart参数。
+ 
+ 这里需要注意的是在SpringMVC的配置文件中的MultipartResolver解析器的id如下:
+ ![CommonsMultipartResolver在xml配置如下](img/CommonsMultipartResolver在xml配置如下.png)
+ 
+
  
