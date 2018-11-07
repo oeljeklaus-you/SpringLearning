@@ -422,3 +422,23 @@
  首先我们必须在JSP中声明,具体如下:
  ![Spring标签库配置](img/Spring标签库配置.png)
  
+ 对于一般的Spring绑定标签有:
+ ![Spring表单绑定标签1](img/Spring表单绑定标签1.png)
+ ![Spring表单绑定标签2](img/Spring表单绑定标签2.png)
+ 
+ 这里又一个提交表单使用Spring表单绑定标签渲染,具体如下:
+ ![Spring表单绑定用例](img/Spring表单绑定用例.png)
+ 在这里,一定要设置modelAtrribute属性，这样Spring才能渲染,不然会出现JSP错误。
+ 
+ 在控制器的方法层面,一定要出现model,model的属性设置里面需要有modelAtrribute属性设置的键值对。
+ 
+ 那么如果出现错误如何显示在页面呢? 可以使用上面的error标签即可
+ 
+ Spring中的通用标签
+  Spring除了绑定表单标签外也有更加通用标签。如果要使用，首先必须配置如下:
+  ![Spring标签](img/Spring通用标签.png)
+  
+  Spring的一些通用标签:
+  ![Spring的一些通用标签](img/Spring的一些通用标签.png)
+## SpringMVC的高级技术
+ 
