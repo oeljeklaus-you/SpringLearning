@@ -572,3 +572,55 @@
  flash设置后流程如下:
  ![flash流程](img/flash流程.png)
 ## 使用Spring Web Flow
+ Spring Web Flow是一个Web框架,适用于元素按规定流程运行的程序。
+### 在Spring中配置Web Flow
+ Spring Web Flow是构建于Spring MVC基础之上的,这意味着所有的流程请求都需要首先经过Spring MVC的DispatchSerlvet。
+ 
+ 我们需要在Spring的应用上下文中配置一下bean来处理流程请求并执行流程。
+#### 装配流程执行器
+ 流程执行器驱动流程的执行。当用户进入一个流程时,流程执行器会为用户创建并启动一个流程执行实例。当流程暂停的时候(如为用户展示视图)
+ 
+ 流程执行器会在用户执行操作后恢复流程。
+ 
+ 在Spring中创建一个流程执行器如下:
+ ![流程执行器](img/流程执行器.png)
+ 流程执行器负责创建和执行流程，但它并不负责加载流程定义。这个责任落在流程注册表上。
+#### 配置流程注册表
+ 流程注册表的工作是加载流程定义并让流程执行器能够使用它们。
+ 
+ 流程注册表的配置如下:
+ ![流程注册表配置](img/流程注册表配置.png)
+ 通过base-path属性来确定流程定义，依据<flow:flow-location-pattern>元素的值，任何文件以"-flow.xml"结尾的xml文件都将视为
+ 
+ 流程定义。所有的流程都是通过其ID来进行引用，这了星号表示流程id。
+ 
+ 流程定义中的流程ID计算:
+ ![流程定义中的流程ID计算](img/流程定义中的流程ID.png)
+#### 处理流程请求
+ 对于流程而言,我们需要一个FlowHandlerMapping来帮助DispatchServlet将流程请求发送Spring Web Flow。
+ 
+ 在Spring应用上下文,FlowHandlerMapping的配置如下:
+ ![FlowHandlerMapping的Spring上下](img/FlowHandlerMapping的Spring上下文.png)
+ FlowHandlerMapping中配置了流程注册表,这样它就知道如何将请求的URL匹配到流程中。
+ 
+ FlowHandlerMapping的工作仅仅是将流程请求定向到Spring Web Flow上,响应请求是FlowHandlerAdapter。
+ 
+ FlowHandlerAdapter等同于Spring MVC的控制器,它会响应发送的流程请求并对其进行处理。具体装配如下:
+ ![FlowHandlerAdapter的配置流程](img/FlowHandlerAdapter的配置流程.png)
+ 这个处理器是DispatcherServlet和Spring Web Flow的桥梁。它处理流程请求并管理基于这些请求的流程。
+ 
+ 在这里,它装配了流程执行器的引用,而后者是为所处理的请求执行流程。
+### 流程的组件
+ 在Spring Web Flow中，流程主要由三个元素定义:状态、转移和流程数据。状态是流程中事件中的地点。
+ 
+ 流程中的状态是业务逻辑执行、作出决策或者将页面展会给用户的地方。
+ 
+ 如果流程状态就像公路旅行中停下来的地点,那转移就是链接这些点的公路。在流程中，你通过转移的方式从这一个状态
+ 
+ 到另一个状态。在流程处理中,它要收集一些数据:流程的当前状况。
+ 
+ 
+ 
+ 
+ 
+ 
