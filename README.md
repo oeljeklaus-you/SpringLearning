@@ -714,8 +714,38 @@
   </global-transitions>
   
   定义完这个全局流程之后,流程中的所有流程都会默认拥有这个cancel转移。
-  
-  
  
+#### 流程数据
+ 当流程从一个状态进行到另一个状态时,它会带走一些数据。有时候,这些数据只需要很短时间,有时候,这些数据会在整个
  
+ 流程中传递并在流程结束的时候用。
+ 
+ 声明变量
+  
+  流程数据保存变量中,而变量可以在流程的各个地方引用。<var name="person" class="cn.edu.hust.bean.Person"/>
+  
+  创建一个Person的实例,放在名为person的变量中,这个变量可以在流程的任意状态访问。
+  
+  作为行为状态的一部分作为视图状态的入口,可以使用如下声明:
+  
+  <evaluate expression="T(cn.edu.hust.bean.Person).asList()" result="viewScope.personList"/>
+  
+  <evaluate>元素计算一个表达式将结果放到名为personList的变量中,这个变量是视图作用域的。
+  
+  <set name="flashScope.person" value="new cn.edu.hust.bean.Person()" />
+  
+  上述是将变量设置为表达式计算的结果。
+  
+ 定义流程数据的作用域
+  
+   流程中携带的数据会拥有不同的生命作用域和可见性,这取决于保存数据的变量本身作用域。
+   
+   Spring Web Flow的作用域:
+   ![SpringWebFlow的作用域](img/SpringWebFlow的作用域.png)
+ 
+   当使用<var>元素声明变量时,变量始终是流程作用域的,也就是在定义变量的流程内有效.当使用<set>或<evaluate>
+  
+   的时候,作用域通过name或result属性的前缀指定。
+   
+### 组合起来:披萨流程
  
