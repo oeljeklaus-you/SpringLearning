@@ -824,7 +824,7 @@
  ![dbcp连接池相关配置](img/dbcp连接池相关配置.png)
 ### 在Spring中使用JDBC
  首先在Spring中配置jdbcTemlapte的bean,防止以后繁琐的sql操作
- ![jdbcTemplate的bean配置](img/jdbcTemplate的bean配置.ong)
+ ![jdbcTemplate的bean配置](img/jdbcTemplate的bean配置.png)
  
  然后在相关的dao层配置适合的dao实现
  ![PersonDaoImpl实现类](img/PersonDaoImpl实现类.png)
