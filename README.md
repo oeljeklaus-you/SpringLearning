@@ -749,6 +749,55 @@
    
 ### 组合起来:披萨流程
  
+## 保护Web应用
+### Spring Security简介
+ Spring Security是基于Spring的应用程序提供了声明式安全保护的安全性框架。
+ 
+ Spring Security提供了Web请求级别和方法调用级别处理身份认证和授权。
+ 
+ Spring Security充分利用了依赖注入和面向切面的技术。
+ 
+ Spring Security使用了Servlet规范中的Filter保护Web请求并限制URL级别的访问。
+ 
+ Spring Security还能使用Spring AOP保护方法调用。
+ 
+#### 理解Spring Security的模块
+ Spring Security的11个模块如下:
+ ![Spring Security的11个模块](img/Spring%20Security的11个模块.png)
+ 应用程序的类路径下至少要包含Core和Configuration这两个模块。
+#### 过滤Web请求
+ Spring Security借助一系列Servlet Filter来提供了各种安全性功能。
+ 
+ 要启动Spring Security功能,我们需要在web.xml中配置一个Filter,DelegatingFilterProxy
+ 
+ 是一个特殊的Servlet Filter,它本身所做的功能并不多。只是将工作委托给javax.servlet.filter实现类
+ 
+ 这个实现类作为一个<bean>注册到Spring应用上下文中。流程如下:
+ ![DelegatingFilterProxy委托代理](img/DelegatingFilterProxy委托代理.png)
+ 如果喜欢传统的xml配置,可以在web.xml配置filter,具体配置如下:
+ ![web.xml配置springSecurity](img/web.xml配置springSecurity.png)
+ 这里重要的是将<filter-name>设置为springSecurityFilterChain,DelegatingFilterProxy会将过滤逻辑委托给他。
+ 
+ springSecurityFilterChain本身是另一个特殊的Filter,它也被称为FilterChainProxy,它可以链接任意一个
+ 
+ 或多个其他的Filter.SpringSecurity依赖一系列Servlet Filter来提供不同的安全特性。
+#### 编写简单的安全性配置
+ 启用安全配置的最简单配置如下:
+ ![SecurityConfig配置](img/SecurityConfig配置.png)
+ @EnableWebSecurity注解将会启用Web安全功能。SpringSecurit必须配置一个实现了WebSecurityConfigurer的bean
+ 
+ 扩展WebSecurityConfigurerAdapter。在Spring的上下文中,任何实现了WebSecurityConfigurer的bean都可以用来配置
+ 
+ Spring Security,但是最简单的方式还是扩展WebSecurityConfigurerAdapter。
+ 
+ @EnableWebSecurity可以启用任意web应用的安全性功能,不过，如果你的应用使用的是Spring MVC开发,那么你可以使用
+ 
+ @EnableWebMvcSecurity代替这个注解。
+ 
+ 我们可能希望指定Web安全的细节,通过重载WebSecurityConfigurerAdapter中的一个或者多个方法来实现。可以通过
+ 
+ 重载WebSecurityConfigurerAdapter的三个configure()方法来配置安全性。具体如下
+ ![WebSecurityConfigurerAdapter的三个方法](img/WebSecurityConfigurerAdapter的三个方法.png)
  
 ## 通过Spring和JDBC征服数据库
 ### Spring的数据访问哲学
@@ -830,4 +879,29 @@
  ![PersonDaoImpl实现类](img/PersonDaoImpl实现类.png)
  
  最后根据相关方法查询即可
+ 
+## 使用NoSQL数据库
+ Spring Data还提供了对多种NoSQL数据库的支持,包括MongoDB、Neo4j和Redis。它不仅支持自动化的
+ 
+ Repository,还支持基于模板的数据访问和映射注解.
+ 
+### 使用MongoDB持久化文档数据
+ Spring Data MongoDB提供了三种方式在Spring应用中使用MongoDB:
+ 
+ 1.通过注解实现对象-文档映射
+ 
+ 2。使用MongoTemplate实现基于模板的数据库访问
+ 
+ 3.自动化的运行是Repository生成功能
+#### 启用MongoDB
+ 首先,我们需要配置MongoClient,以便访问MongoDB数据库,同时，我们需要配置一个MongoTemplate bean,
+ 
+ 实现基于模板的数据库访问。此外,不是必须,但是强烈推荐启用Spring Data MongoDB的自动化Repository
+ 
+ 生成功能。
+ 
+ 
+ 
+ 
+ 
  
