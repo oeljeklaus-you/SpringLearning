@@ -798,6 +798,23 @@
  
  重载WebSecurityConfigurerAdapter的三个configure()方法来配置安全性。具体如下
  ![WebSecurityConfigurerAdapter的三个方法](img/WebSecurityConfigurerAdapter的三个方法.png)
+### 选择查询用户详细信息的服务
+#### 使用基于内存的用户存储
+ 安全配置类扩展了WebSecurityConfigurerAdapter,因此配置用户存储的最简单方法是重载configure()方法,并以AuthenticationManagerBuilder
+ 
+ 作为传入参数,AuthenticationManagerBuilder有多个方法可以用来配置SpringSecurity对认证的支持。通过
+ 
+ inMemoryAuthentication()方法,可以启用、配置并任意填充基于内存的用户存储。
+ 
+ ![配置用户存储的具体细节](img/配置用户存储的具体细节.png)
+ roles()方法是authorities()方法的简写形式。roles()方法所给定的值都会添加一个"ROLE_"前缀,并将其作为
+ 
+ 权限授予给用户。配置用户详细信息的方法:
+ ![配置用户详细信息的方法](img/配置用户详细信息的方法.png)
+ 在测试的时候,基于内存的存储可能是比较理想的,但是在生产换的时候,这不是很合适。
+#### 基于数据库的用户认证
+ 为了配置SpringSecurity使用以JDBC为了支撑的用户存储,使用jdbcAuthentication()方法,配置如下
+ ![数据库认证配置](img/数据库认证配置.png)
  
 ## 通过Spring和JDBC征服数据库
 ### Spring的数据访问哲学
@@ -879,6 +896,56 @@
  ![PersonDaoImpl实现类](img/PersonDaoImpl实现类.png)
  
  最后根据相关方法查询即可
+## 使用对象-关系映射持久化数据
+ 延迟加载:随着我们的对象关系变得越来越复杂,有时候我们并不希望立即获取完整的对象间关系。
+ 
+ 预先抓取:这与延迟加载是相对的.借助于预先抓取，我们可以使用一个查询完整的关联对象。
+ 
+ 级联:有时候更改数据库中的表会同时修改其他的表。
+ 
+ Spring对多个持久化框架提供了支持，包括Hibernate、JPA等。Spring对这些ORM框架提供了集成服务以及一些附带
+ 
+ 的服务:
+ 
+ 1.支持集成Spring声明式事务
+ 
+ 2。透明的异常处理
+ 
+ 3。线程安全的、轻量级的模板
+ 
+ 4。DAO支持类
+ 
+ 5。资源管理
+ 
+### 在Spring中集成Hibernate
+#### 声明Hibernate的Session工厂
+ 使用Hibernate所需要的接口是org.hibernate.Session.Session接口t提供了基本的数据访问功能、如保存、
+ 
+ 更新、删除以及从数据库中加载对象的功能。通过Hibernate的Session接口，应用程序的Repository能够满足所有的
+ 
+ 持久化需求。
+ 
+ 获取 Hibernate Sessiond对象的标准是借助于Hibernate SessionFactory接口的实现类。
+ 
+ 除了一些其他任务,SessionFactory主要负责Hibernate Session的打开、关闭。
+ 
+ Spring提供了3个Session工厂 bean:
+ 
+ 1.LocalSessionFactoryBean
+ 
+ 2.AnnotationSessionFactoryBean
+ 
+ 3.LocalSessionFactoryBean
+ 
+ 基于注解的配置如下:
+ ![HibernateSessionFactoryBean配置](img/HibernateSessionFactoryBean配置.png)
+#### 构建不依赖于Spring的Hibernate代码
+ 这里我们要构建一个Hibernate的DAO配置
+ ![HibernateDao配置](img/HibernateDao配置.png)
+ 为了给不使用模板的Hibernate Repository添加异常转化功能,我们需要在Spring应用上下文中添加一个
+ 
+ PersistenceExceptionTranslationPostProcessor bean即可。
+### Spring与Java持久化API
  
 ## 使用NoSQL数据库
  Spring Data还提供了对多种NoSQL数据库的支持,包括MongoDB、Neo4j和Redis。它不仅支持自动化的
@@ -899,6 +966,8 @@
  实现基于模板的数据库访问。此外,不是必须,但是强烈推荐启用Spring Data MongoDB的自动化Repository
  
  生成功能。
+ 
+
  
  
  
