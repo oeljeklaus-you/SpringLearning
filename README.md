@@ -946,6 +946,119 @@
  
  PersistenceExceptionTranslationPostProcessor bean即可。
 ### Spring与Java持久化API
+ JPA是基于POJO的持久化机制,它从hibernate和Java数据对象上借鉴了理念并加入了Java5注解的特性。
+ 
+ 在Spring中使用JPA的第一步是要在Spring应用上下文将实体管理器工厂按照bean进行配置。
+ 
+#### 配置实体工厂管理器
+ 基于JPA的应用程序需要使用EntityManagerFactory的实现类来获取EntityManager实例。JPA定义了两种类型
+ 
+ 的实体管理器:
+ 
+ 1.应用程序管理类型:当应用程序向实体管理器工厂直接请求实体管理器时,工厂创建一个实体管理器。这种模式下,程序
+ 
+ 要负责或实体管理器并在事务中对其进行控制。这种方式的实体管理器适合于不运行在JavaEE容器中的独立应用程序。
+ 
+ 2.容器管理类型:实体管理器由JavaEE创建和管理。应用程序根本不与实体管理器工厂打交道。相反,实体管理器直接通过
+ 
+ 注入或JNDI来获取。容器负责配置实体管理器工厂。
+ 
+ 以上的实体管理器都实现了同一的EntityManager接口。关键区别不在于EntityManager本身,而在于EntityManager的创建
+ 
+ 和管理方式。应用管理类型的EntityManager是由EntityMangerFactory创建的,而后者是通过PersistenceProvider的
+ 
+ createEntityManagerFactory()方法得到。与持相反,容器管理类型的EntityManagerFactory是通过PersistenceProvider
+ 
+ 的createContainerEntityManagerFacotry()方法得到。
+ 
+ 这两种实体管理器工厂分别对应由对应的Spring工厂Bean创建:
+ 
+ 1.LocalEntityManagerFactoryBean生成应用程序管理类型的EntityManagerFactory
+ 
+ 2.LocalContainerEntityManagerFactoryBean生成容器管理类型的EntityManagerFactory
+ 
+ 配置应用程序的JPA
+ 
+  绝大部分的配置信息来源于一个名为persistence.xml配置文件。这个文件必须位于路径下的META-INF目录下
+  
+  persistence.xml的作用在于定义一个或多个持久化单元。持久化单元是同一个数据源下的一个或多个持久类。
+  
+  具体配置如下:
+  ![JPA的XMl配置](img/JPA的xml配置.png)
+  由于xml配置文件中已经配置了大量的持久化单元以及数据库连接的相关信息,一般的注解配置就显得非常少如下:
+  ![JPA的Java配置](img/JPA的Java配置.png)
+  创建应用管理类型的EntityManagerFactory都是在persistene.xml中进行的,而正是应用程序管理的本意。
+  
+  在应用程序管理的场景下,完全由应用程序本身来负责获取EntityManagerFactory,这就是通过JPA实现的
+  
+  PersistenceProvider做到的。如果每次请求EntityManagerFactory时需要定义持久化单元,那代码将会膨胀,
+  
+  通过将其配置在persistence.xml中,JPA就能够在这个特定的位置查找到持久化单元。
+  
+ 使用容器管理类型的JPA
+  
+  当运行在容器中,可以使用容器(在我们的容器中是Spring)提供的信息来生成EntityManagerFactory。
+  
+  可以使用@Bean注解来配置,具体配置如下:
+  ![容器管理器配置](img/容器管理器配置.png)
+  jpaVendorAdapter属性用于指明所使用的是哪一个厂商的JPA实现,Spring提供了多个JPA适配器:
+  
+  1.EclipseLinkJpaVendorAdapter
+  
+  2.HibernateJpavendorAdapter
+  
+  3.OpenJpaVendorAdapter
+  
+  这里我们配置Hibernate-JpaVendorAdapter,配置如下:
+  ![HibernateJPAVendorAdaptor](img/HibernateJPAVendorAdaptor.png)
+  设置厂商适配器,主要的是database属性,这个属性支持如下:
+  ![数据库适配器](img/数据库适配器.png)
+  我们可以在HibernateJPAVendorAdaptor设置扫描的包,那么只需要扫描带有@Entity注解的类。
+  
+ 从JNDI获取实体管理器工厂
+  
+  如果将Spring应用程序部署在应用服务器中,EntityManagerFactory可能已经创建好了并且位于JNDI中等待
+  
+  查询使用。在这种情况下,可以使用Spring jee命名空间下的<jee:jndi-lookup>元素来获取EntityMangerFactory
+  
+  的引用:
+  ![jee](img/jee.png)
+  可以使用如下的Java配置获取
+  ![JNDIEntityManagerFactory](img/JNDIEntityManagerFactory.png)
+#### 编写基于JPA的Repository
+ Spring对JPA集成也提供了JpaTemplate模板以及对应的支持类JpaDaoSupport.
+ 
+ 下面是使用容器管理器的配置:
+ 
+ 1.配置EntityManagerFactory
+ ![编写EntityManagerFactory的Java注解](img/编写EntityManagerFactory的Java注解.png)
+ 2.编写DAO层
+ ![DAO层](img/DAO层.png)
+### 借助Spring Data实现自动化的JPA repository
+ 对于很多Dao层下面的实现有很多相同的模板方法,我们不需要一遍地编写相同的Repository实现,Spring Data
+ 
+ 能够让我们编写Repository接口就可以了。根本就不再需要实现类。
+ 
+ 编写Spring Data Repository的关键在于要从一组接口中挑选一个进行扩展。如果要编写Repository的实现
+ 
+ 只需要扩展Spring Data JPA的JpaRepository。通过这种方式,JpaRepository进行参数化,所以它就能知道
+ 
+ 这就是一个用来持久化Person对象的Repository,并且Person的ID类型是int
+ ![编写PersonRepository接口](img/编写PersonRepository接口.png)
+ 另外,他还会继承18个持久化操作的通用方法,如保存Person、删除Person以及根据ID查询Person
+ 
+ 其实我们不需要编写PersonRepository的任何实现类,我们让Spring Data来为我们这里做这件事。
+ 
+ 为了让Spring Data创建PersonRepository的实现,我们需要在Spring配置添加一个元素。
+ ![SpringData的XML配置](img/SpringData的XML配置.png)
+ 上面的xml元素会扫描它的基础包来查找扩展Spring Data JPA Repository的接口的所有接口,如果发现
+ 
+ 了扩展自Repository的接口,他会自动生成这个接口的实现。
+ 
+ Spring Data JPA很棒的一点在它能为Person对象提供18个遍历的方法来提供通用的JPA操作,而无需你编写
+ 
+ 任何持久化代码。但是对于自定义的方法，我们应该如何编写持久化代码呢？
+#### 定义查询方法
  
 ## 使用NoSQL数据库
  Spring Data还提供了对多种NoSQL数据库的支持,包括MongoDB、Neo4j和Redis。它不仅支持自动化的
