@@ -1083,6 +1083,25 @@
  
  我们可以断言后加入OrderBy进行结果的排序。如果查询很繁琐,我们可以通过@Query注解来解决问题。
 #### 声明自定义查询
+ 如果所需要的数据无法通过方法名称进行恰当描述,那么我们可以使用@Query注解,为Spring Data提供了查询。
+ ![Query注解查询](img/Query注解查询.png)
+ 对于Spring Data JPA的接口来说,@Query是一种添加定义查询的便利方式。
+#### 混合自定义的功能
+ 有些功能使用18种方法和@Query注解是无法解决,如果你需要的事件无法通过Spring Data JPA来实现,那就必须
+ 
+ 要在一个比Spring Data JPA更低级的层级上使用JPA。
+ 
+ 当Spring Data JPA为Repository接口生成实现的时候,它还会查找名字与接口相同,并且添加Impl后缀的一个类。
+ 
+ 如果这个类存在的话,Spring Data JPA将会把它的方法与Spring Data JPA所生成的方法合并在一起。
+ ![混合方式的配置](img/混合方式的配置.png)
+ 注意IPersonRepositoryImpl并没有实现IPersonRepository接口,Spring Data JPA负责实现这个接口。
+ 
+ 这里,我们需要确保countPersonNum()方法会声明在IPersonRepository接口中,我们需要修改IPersonRepository接口。
+ ![修改后的IPersonRepository](img/修改后的IPersonRepository.png)
+ Spring Data JPA将实现类与接口关联起来是基于接口的名称。但是,Impl后缀只是默认的做法,如果你想使用其他的
+ 
+ 后缀的话,可以在<jpa:repositories设置repository-impl-postfix属性即可。
 ## 使用NoSQL数据库
  Spring Data还提供了对多种NoSQL数据库的支持,包括MongoDB、Neo4j和Redis。它不仅支持自动化的
  
