@@ -1122,7 +1122,54 @@
  
  生成功能。
  
-
+ 首先需要引用jar包如下:
+ ![Spring整合MongoDB的jar包](img/Spring整合MongoDB的jar包.png)
+### 使用Redis操作key-value数据
+ Redis是一种特殊的数据库,称之为key-value存储。
+#### 连接到Redis
+ Spring Data Redis为四种Redis客户端实现提供了连接工厂:
+ 
+ 1.JedisConnectionFactory
+ 
+ 2.JredisConnectionFactory
+ 
+ 3.LettuceConnectionFactory
+ 
+ 4.SrpConnectionFactory
+ 
+ 首先要引入jar包,如下:
+ ![redis的pom](img/redis的pom.png)
+ 配置redis连接的工厂如下:
+ ![Jedis的连接工程](img/Jedis的连接工程.png)
+ Spring Data Redis以模板的形式提供了较高级的数据访问方案.实际上,Spring Data Redis提供了两种
+ 
+ 模板:
+ 1.RedisTemplate
+ 
+ 2.StringRedisTemplate
+ 
+ RedisTemplate可以极大简化数据访问,能够持久化各种数据类型,StringRedisTemplate只关注String
+ 
+ 使用RedisTemplate操作数据:
+ ![RedisTemplate的bean配置](img/RedisTemplate的bean配置.png)
+ RedisTemplate的操作API:
+ ![RedisTemplate的操作API](img/RedisTemplate的操作API.png)
+#### 使用key和value的序列器
+ Spring Data Redis提供了多个序列化器:
+ 
+ 1.GenericTpStringSerializer:使用Spring转换服务进行序列化
+ 
+ 2.JacksonJsonRedisSerializer:使用Jackson1,将对象序列化为json
+ 
+ 3.Jackson2JsonRedisSerializer:使用Jackson2,将对象序列化为json
+ 
+ 4.JdkSerializeRedisSerializer:使用Java序列化
+ 
+ 5.OxmSerializer:使用Springx/o映射的编排器和解排器实现序列化,用于xml序列化.
+ 
+ 6.StringRedisSerializer:序列化String的key和value
+ 
+ 序列化器都实现RedisSerializer接口,如果需要使用自定义序列化器,你可以自行创建。
  
  
  
