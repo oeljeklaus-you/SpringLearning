@@ -1,7 +1,7 @@
 # Spring学习笔记
 ## 装配Bean
 ### 自动化装配
- 在工程目录文件内"cn.edu.hust.autowriting"包内进行自动装配,学习到的知识有如下:
+ 在工程目录文件内"cn.edu.cn.edu.hust.autowriting"包内进行自动装配,学习到的知识有如下:
  
  @Autowired 注解可以放在任何想要的方法和属性中,表示注入,这与Spring的主要思想DI(依赖注入)有关
  
@@ -12,7 +12,7 @@
  具体的配置如下:
  ![Spring配置包扫描](img/Spring配置包扫描.png)
 ### JavaConfig配置
- 在工程目录文件内"cn.edu.hust.javaConfig"包内进行自动装配,学习到的知识有如下:
+ 在工程目录文件内"cn.edu.cn.edu.hust.javaConfig"包内进行自动装配,学习到的知识有如下:
  
  @ComponentScan 注解表示扫描的包，内部的属性有个basePackages,表示需要扫描的包,这是一个数组,可以扫描多个
  
@@ -89,7 +89,7 @@
  ![@Conditional注解内部原理.png](img/@Conditional注解内部原理.png)
 
 ### 处理自动装配的歧义
- 在工程目录文件内"cn.edu.hust.cancelMulti"包内进行处理自动装配的歧义demo
+ 在工程目录文件内"cn.edu.cn.edu.hust.cancelMulti"包内进行处理自动装配的歧义demo
  
  有时候我们可能遇到这样的情况,如果实现某个接口的类不只一个,那么有个类需要依赖这个类,当需要注入的时候就会产生歧义.
  
@@ -146,7 +146,7 @@
  ![xml配置bean作用域](img/xml配置bean作用域.png)
  
 ### 运行注入值
- 在工程目录文件内"cn.edu.hust.property"包内进行运行市注入值
+ 在工程目录文件内"cn.edu.cn.edu.hust.property"包内进行运行市注入值
  
  在前面几节的内容中，使用了硬编码，在实际生产环境中肯定是不行的所以要使用可配置的文件。
  
@@ -722,17 +722,17 @@
  
  声明变量
   
-  流程数据保存变量中,而变量可以在流程的各个地方引用。<var name="person" class="cn.edu.hust.bean.Person"/>
+  流程数据保存变量中,而变量可以在流程的各个地方引用。<var name="person" class="cn.edu.cn.edu.hust.bean.Person"/>
   
   创建一个Person的实例,放在名为person的变量中,这个变量可以在流程的任意状态访问。
   
   作为行为状态的一部分作为视图状态的入口,可以使用如下声明:
   
-  <evaluate expression="T(cn.edu.hust.bean.Person).asList()" result="viewScope.personList"/>
+  <evaluate expression="T(cn.edu.cn.edu.hust.bean.Person).asList()" result="viewScope.personList"/>
   
   <evaluate>元素计算一个表达式将结果放到名为personList的变量中,这个变量是视图作用域的。
   
-  <set name="flashScope.person" value="new cn.edu.hust.bean.Person()" />
+  <set name="flashScope.person" value="new cn.edu.cn.edu.hust.bean.Person()" />
   
   上述是将变量设置为表达式计算的结果。
   
@@ -1174,7 +1174,38 @@
  引入jackson的pom包,配置如下:
  ![配置Jackson的pom](img/配置Jackson的pom.png)
 ## 缓存数据
-
+### 启用对缓存的方式
+ Spring对缓存的支持有两种方式:
+ 1.xml
+ 2.注解驱动的缓存
+ 
+ 使用Spring的缓存抽象时,最通用的方式是在方法上添加了@Cacheable和@CacheEvict注解。
+ 
+ 使用Java配置如下:
+ ![cache的java配置](img/cache的java配置.png)
+ 使用xml配置如下:
+ ![cache的xml配置](img/cache的xml配置.png)
+#### 配置缓存管理器
+ Sprin3.1配置了五种缓存管理器;如下表示为:
+ 1.SimpleCacheManager
+ 
+ 2。NoOpCacheManager
+ 
+ 3。ConcurrentCacheManager
+ 
+ 4.CompositeCacheManager
+ 
+ 5.EhCacheCacheManager
+ 
+ Spring3.2引入另一个缓存管理器,这个缓存管理器可以用在基于JCache的缓存提供商中,除了核心的Spring框架
+ 
+ Spring Data又提供了两种缓存管理器:
+ 
+   RedisCacheManager
+   
+   GemfireCacheManager
+   
+ 
  
  
  

@@ -3,11 +3,12 @@ package cn.edu.hust.dao;
 import cn.edu.hust.bean.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 import javax.inject.Inject;
 import java.util.List;
-
-/**@Repository**/
+/**
+@Repository**/
 public class PersonHibernateDao {
     private SessionFactory sessionFactory;
     @Inject

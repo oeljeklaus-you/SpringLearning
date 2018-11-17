@@ -53,7 +53,7 @@ public class JPAConfig {
                 =new LocalContainerEntityManagerFactoryBean();
         localContainerEntityManagerFactoryBean.setDataSource(dataSource);
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter);
-        localContainerEntityManagerFactoryBean.setPackagesToScan("cn.edu.hust.bean");
+        localContainerEntityManagerFactoryBean.setPackagesToScan("cn.edu.cn.edu.hust.bean");
         return localContainerEntityManagerFactoryBean;
     }**/
 

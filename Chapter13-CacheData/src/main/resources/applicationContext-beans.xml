@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="cn.edu.hust">
+        <context:exclude-filter type="regex" expression="cn.edu.hust.controller"></context:exclude-filter>
+    </context:component-scan>
+
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://10.211.55.16:3306/springtest"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="initialSize" value="5"/>
+        <property name="maxIdle" value="10"/>
+    </bean>
+
+
+    <!--如果是xml配置,使用这个开启缓存管理，这里我们使用java注解配置,那么这里我们需要将下面的配置注销-->
+    <!--<cache:annotation-driven/>-->
+</beans>

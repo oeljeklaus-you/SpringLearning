@@ -1,0 +1,5 @@
+cn/edu/hust/bean/Person.class
+cn/edu/hust/dao/PersonDaoImpl.class
+cn/edu/hust/dao/PersonDaoImpl$PersonMapper.class
+cn/edu/hust/controller/HomeController.class
+cn/edu/hust/service/PersonServiceImpl.class

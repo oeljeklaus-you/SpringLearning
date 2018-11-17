@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>Register cn.edu.hust.bean.Person Info</title>
+    <title>Register cn.edu.cn.edu.hust.bean.Person Info</title>
 </head>
 <body>
     <form action="/register" method="post">

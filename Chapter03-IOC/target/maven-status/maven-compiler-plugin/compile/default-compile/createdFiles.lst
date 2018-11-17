@@ -1,0 +1,8 @@
+cn/edu/hust/scope/ShoppingCart.class
+cn/edu/hust/scope/StoreService.class
+cn/edu/hust/cancelMulti/domain/Cookie.class
+cn/edu/hust/property/Person.class
+cn/edu/hust/cancelMulti/interfaces/Dessert.class
+cn/edu/hust/cancelMulti/domain/Cake.class
+cn/edu/hust/cancelMulti/service/DessertPlayer.class
+cn/edu/hust/cancelMulti/domain/IceCream.class

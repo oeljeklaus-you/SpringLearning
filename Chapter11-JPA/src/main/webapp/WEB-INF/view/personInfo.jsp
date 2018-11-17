@@ -10,7 +10,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>cn.edu.hust.bean.Person Info</title>
+    <title>cn.edu.cn.edu.hust.bean.Person Info</title>
 </head>
 <body>
     <div>

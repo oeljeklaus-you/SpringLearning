@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.edu.hust</groupId>
+    <groupId>cn.edu.cn.edu.hust</groupId>
     <artifactId>SpringLearning</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -16,6 +16,7 @@
         <module>Chapter10-JDBC</module>
         <module>Chapter11-JPA</module>
         <module>Chapter12-NOSQL</module>
+        <module>Chapter13-CacheData</module>
     </modules>
     <packaging>pom</packaging>
 

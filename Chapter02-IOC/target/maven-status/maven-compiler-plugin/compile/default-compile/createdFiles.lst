@@ -1,0 +1,11 @@
+cn/edu/hust/xml/domain/Dog.class
+cn/edu/hust/javaConfig/AnimalConfig.class
+cn/edu/hust/javaConfig/domain/Dog.class
+cn/edu/hust/javaConfig/domain/Animal.class
+cn/edu/hust/javaConfig/domain/AnimalCryAndRun.class
+cn/edu/hust/interfaces/CompactDisc.class
+cn/edu/hust/xml/interfaces/Animal.class
+cn/edu/hust/domain/CDPlayer.class
+cn/edu/hust/xml/service/AnimalPlayer.class
+cn/edu/hust/domain/SgtPeppers.class
+cn/edu/hust/javaConfig/domain/Cat.class

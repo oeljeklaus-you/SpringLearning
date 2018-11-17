@@ -1,6 +1,6 @@
 package cn.edu.hust.domain;
 
-import cn.edu.hust.autowriting.interfaces.CompactDisc;
+import cn.edu.hust.interfaces.CompactDisc;
 import org.springframework.stereotype.Component;
 
 /**

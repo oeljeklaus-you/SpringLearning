@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:bean="http://www.springframework.org/schema/jdbc"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/jdbc
+       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder></context:property-placeholder>
+    <!--这里如果设置为false可以将cglib代理设置为jdk默认代理-->
+    <bean id="shoppingCart" class="cn.edu.hust.scope.ShoppingCart" scope="prototype">
+        <aop:scoped-proxy proxy-target-class="false"></aop:scoped-proxy>
+    </bean>
+
+    <!--只有处于激活态的配置文件才可以使用-->
+    <beans profile="dev">
+        <bean:embedded-database id="dataSource">
+            <jdbc:script location="classpath:schema.sql"/>
+            <jdbc:script location="classpath:test.sql"/>
+        </bean:embedded-database>
+    </beans>
+
+    <beans profile="qa">
+        <bean id="datasource" class="org.apache.commons.dbcp2.BasicDataSource">
+            <property name="url" value="jdbc:h2:tcp//dbserver/~/test"></property>
+            <property name="driverClassName" value="org.h2.Driver"></property>
+            <property name="username" value="root"></property>
+            <property name="password" value="root"></property>
+            <property name="initialSize" value="10"></property>
+        </bean>
+    </beans>
+
+
+</beans>

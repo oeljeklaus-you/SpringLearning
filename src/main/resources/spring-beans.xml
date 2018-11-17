@@ -18,7 +18,7 @@
     <!-- 一般会设置一个id，id的值为类的名字首字母小写
         有可能这里的类有类似于setter方法的注入,可以使用如下注解使用等
     -->
-    <bean id="dog" class="cn.edu.hust.xml.domain.Dog" scope="singleton">
+    <bean id="dog" class="cn.edu.cn.edu.hust.xml.domain.Dog" scope="singleton">
         <!--<property name="animal" ref="animalPlayer"></property>-->
     </bean>
 
@@ -27,7 +27,7 @@
          使用list作为构造器的装配,类似的也可以使用set来进行装配
     -->
     <!--
-    <bean id="animalPlayer" class="cn.edu.hust.xml.service.AnimalPlayer" scope="prototype">
+    <bean id="animalPlayer" class="cn.edu.cn.edu.hust.xml.service.AnimalPlayer" scope="prototype">
         <constructor-arg ref="dog"/>
         <constructor-arg value="vivi"/>
         <constructor-arg>
@@ -41,22 +41,22 @@
     </bean>
     -->
 
-    <bean id="animalPlayer" class="cn.edu.hust.xml.service.AnimalPlayer" scope="prototype">
+    <bean id="animalPlayer" class="cn.edu.cn.edu.hust.xml.service.AnimalPlayer" scope="prototype">
         <constructor-arg ref="dog"/>
     </bean>
 
     <!--这里如果设置为false可以将cglib代理设置为jdk默认代理-->
-    <bean id="shoppingCart" class="cn.edu.hust.scope.ShoppingCart" scope="prototype">
+    <bean id="shoppingCart" class="cn.edu.cn.edu.hust.scope.ShoppingCart" scope="prototype">
         <aop:scoped-proxy proxy-target-class="false"></aop:scoped-proxy>
     </bean>
 
-    <bean id="moviePerformance" class="cn.edu.hust.xmlAOP.MoviePerformance"/>
+    <bean id="moviePerformance" class="cn.edu.cn.edu.hust.xmlAOP.MoviePerformance"/>
 
-    <bean id="audience" class="cn.edu.hust.xmlAOP.Audience"></bean>
+    <bean id="audience" class="cn.edu.cn.edu.hust.xmlAOP.Audience"></bean>
     <!--xml配置aop,aop配置元素必须在config内配置-->
     <aop:config>
-        <aop:pointcut id="perform" expression="execution(* cn.edu.hust.*.*.perform(..))"/>
-        <aop:pointcut id="count" expression="execution(* cn.edu.hust.*.*.count(int)) and args(int)"/>
+        <aop:pointcut id="perform" expression="execution(* cn.edu.cn.edu.hust.*.*.perform(..))"/>
+        <aop:pointcut id="count" expression="execution(* cn.edu.cn.edu.hust.*.*.count(int)) and args(int)"/>
         <!--声明切点，首先需要创建切面的bean-->
         <aop:aspect ref="audience">
             <!--这里配置切面内的切点，通知方法,由于通知方法都是一样的，我们可以抽离即可-->

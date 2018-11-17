@@ -1,0 +1,10 @@
+cn/edu/hust/dao/IPersonRepository.class
+cn/edu/hust/config/JPAConfig.class
+cn/edu/hust/dao/PersonJpaDao.class
+cn/edu/hust/controller/HomeController.class
+cn/edu/hust/bean/Person.class
+cn/edu/hust/dao/CountNum.class
+cn/edu/hust/dao/IPersonRepositoryImpl.class
+cn/edu/hust/dao/PersonHibernateDao.class
+cn/edu/hust/service/PersonServiceImpl.class
+cn/edu/hust/config/JDBCConfig.class

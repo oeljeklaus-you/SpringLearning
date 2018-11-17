@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--这里如果设置为false可以将cglib代理设置为jdk默认代理.这里是启用AspectJ代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+
+    <bean id="moviePerformance" class="cn.edu.hust.xmlAOP.MoviePerformance"/>
+
+    <bean id="audience" class="cn.edu.hust.xmlAOP.Audience"></bean>
+    <!--xml配置aop,aop配置元素必须在config内配置-->
+    <aop:config>
+        <aop:pointcut id="perform" expression="execution(* cn.edu.hust.*.*.perform(..))"/>
+        <aop:pointcut id="count" expression="execution(* cn.edu.hust.*.*.count(int)) and args(int)"/>
+        <!--声明切点，首先需要创建切面的bean-->
+        <aop:aspect ref="audience">
+            <!--这里配置切面内的切点，通知方法,由于通知方法都是一样的，我们可以抽离即可-->
+            <aop:before pointcut-ref="perform" method="turnOffCellPhone"/>
+            <aop:before pointcut-ref="perform" method="takeSeats"/>
+            <aop:after-returning pointcut-ref="perform" method="applause"/>
+            <aop:after-throwing pointcut-ref="perform" method="demandRefund"/>
+            <aop:around pointcut-ref="perform" method="watchPerformance"/>
+            <!--传递参数-->
+            <aop:before pointcut-ref="count" method="watchPerformance"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

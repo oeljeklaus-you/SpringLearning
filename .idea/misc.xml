@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Chapter10-JDBC" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter11-JPA" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter12-NOSQL" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter13-CacheData" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
