@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Chapter10-JDBC:war exploded">
+    <output-path>$PROJECT_DIR$/Chapter10-JDBC/target/Chapter10-JDBC</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Chapter10-JDBC" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Chapter10-JDBC/target/Chapter10-JDBC/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Chapter10-JDBC/web/Web" />
+    </root>
+  </artifact>
+</component>

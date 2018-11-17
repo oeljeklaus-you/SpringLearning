@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chapter02-IOC/Chapter02-IOC.iml" filepath="$PROJECT_DIR$/Chapter02-IOC/Chapter02-IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter03-IOC/Chapter03-IOC.iml" filepath="$PROJECT_DIR$/Chapter03-IOC/Chapter03-IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter04-AOP/Chapter04-AOP.iml" filepath="$PROJECT_DIR$/Chapter04-AOP/Chapter04-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter05-WebAPP/Chapter05-WebAPP.iml" filepath="$PROJECT_DIR$/Chapter05-WebAPP/Chapter05-WebAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter07-WebAPP/Chapter07-WebAPP.iml" filepath="$PROJECT_DIR$/Chapter07-WebAPP/Chapter07-WebAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10-JDBC/Chapter10-JDBC.iml" filepath="$PROJECT_DIR$/Chapter10-JDBC/Chapter10-JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter11-JPA/Chapter11-JPA.iml" filepath="$PROJECT_DIR$/Chapter11-JPA/Chapter11-JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12-NOSQL/Chapter12-NOSQL.iml" filepath="$PROJECT_DIR$/Chapter12-NOSQL/Chapter12-NOSQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringLearning.iml" filepath="$PROJECT_DIR$/SpringLearning.iml" />
     </modules>
   </component>

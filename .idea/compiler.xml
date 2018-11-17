@@ -6,10 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringLearning" />
+        <module name="Chapter02-IOC" />
+        <module name="Chapter03-IOC" />
+        <module name="Chapter04-AOP" />
+        <module name="Chapter05-WebAPP" />
+        <module name="Chapter07-WebAPP" />
+        <module name="Chapter10-JDBC" />
+        <module name="Chapter11-JPA" />
+        <module name="Chapter12-NOSQL" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Chapter02-IOC" target="1.5" />
+      <module name="Chapter03-IOC" target="1.5" />
+      <module name="Chapter04-AOP" target="1.5" />
+      <module name="Chapter05-WebAPP" target="1.7" />
+      <module name="Chapter07-WebAPP" target="1.7" />
+      <module name="Chapter10-JDBC" target="1.7" />
+      <module name="Chapter11-JPA" target="1.7" />
+      <module name="Chapter12-NOSQL" target="1.7" />
       <module name="SpringLearning" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Chapter05-WebAPP" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter07-WebAPP" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter10-JDBC" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter11-JPA" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter12-NOSQL" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

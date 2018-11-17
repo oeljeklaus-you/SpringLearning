@@ -1170,6 +1170,11 @@
  6.StringRedisSerializer:序列化String的key和value
  
  序列化器都实现RedisSerializer接口,如果需要使用自定义序列化器,你可以自行创建。
+ ![序列化器设置](img/序列化器设置.png)
+ 引入jackson的pom包,配置如下:
+ ![配置Jackson的pom](img/配置Jackson的pom.png)
+## 缓存数据
+
  
  
  
