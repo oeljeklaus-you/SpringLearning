@@ -1268,3 +1268,9 @@
  @CacheEvict的属性如下
  ![CacheEvict属性](img/@CacheEvict属性.png)
 ### 使用XML声明缓存
+ 要开启缓存的xml,首先要开启aop和cache
+ 
+ cache的xml配置规则如下:
+ ![cache命名的xml配置](img/cache命名的xml配置.png)
+ 在xml配置cache如下:
+ ![在xml配置cache如下](img/在xml配置cache如下.png)

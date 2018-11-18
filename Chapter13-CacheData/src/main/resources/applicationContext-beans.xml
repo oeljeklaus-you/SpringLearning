@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:cache="http://www.springframework.org/schema/cache" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd">
+       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <context:component-scan base-package="cn.edu.hust">
         <context:exclude-filter type="regex" expression="cn.edu.hust.controller"></context:exclude-filter>
     </context:component-scan>
@@ -24,4 +24,22 @@
 
     <!--如果是xml配置,使用这个开启缓存管理，这里我们使用java注解配置,那么这里我们需要将下面的配置注销-->
     <!--<cache:annotation-driven/>-->
+
+    <!--
+    <cache:annotation-driven/>
+
+    <cache:advice id="cacheAdvice">
+        <cache:caching>
+            <cache:cacheable cache="personCache" method="findOne"/>
+
+            <cache:cache-evict method="addPerson" cache="personCache"/>
+        </cache:caching>
+    </cache:advice>
+
+    <bean id="cacheManager" class="org.springframework.cache.CacheManager"/>
+
+    <aop:config>
+        <aop:advisor advice-ref="cacheAdvice"
+                     pointcut="execution(* cn.edu.hust.dao.PersonHibernateDao.*(..))" />
+    </aop:config>-->
 </beans>

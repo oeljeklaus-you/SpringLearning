@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_8_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/@CacheEvict属性.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Chapter13_CacheData_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Chapter13_CacheData_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/Chapter13-CacheData.iml" afterPath="$PROJECT_DIR$/Chapter13-CacheData/Chapter13-CacheData.iml" />
-      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/pom.xml" afterPath="$PROJECT_DIR$/Chapter13-CacheData/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/config/CachingConfig.java" afterPath="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/config/CachingConfig.java" />
-      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java" afterPath="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java" />
-      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/cache/ehcache.xml" afterPath="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/cache/ehcache.xml" />
+      <change beforePath="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml" afterPath="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,12 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="386">
-                <caret line="1221" column="4" lean-forward="false" selection-start-line="1221" selection-start-column="4" selection-end-line="1221" selection-end-column="16" />
+              <first_editor relative-caret-position="499">
+                <caret line="1275" column="40" lean-forward="true" selection-start-line="1275" selection-start-column="40" selection-end-line="1275" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -62,45 +52,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonHibernateDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/cache/ehcache.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spring.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-beans.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonHibernateDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="25" />
+              <folding>
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,13 +151,13 @@
         <option value="$PROJECT_DIR$/Chapter12-NOSQL/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java" />
         <option value="$PROJECT_DIR$/Chapter11-JPA/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/cache/ehcache.xml" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/config/CachingConfig.java" />
         <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml" />
       </list>
     </option>
   </component>
@@ -275,6 +255,59 @@
             <path>
               <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hust" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hust" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter13-CacheData" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -595,7 +628,7 @@
       <workItem from="1542451890493" duration="187000" />
       <workItem from="1542452086796" duration="8471000" />
       <workItem from="1542461730376" duration="1310000" />
-      <workItem from="1542515329452" duration="5756000" />
+      <workItem from="1542515329452" duration="6622000" />
     </task>
     <servers />
   </component>
@@ -632,7 +665,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126857000" />
+    <option name="totallyTimeSpent" value="127723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1007,22 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/config/Reid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1093,8 +1110,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/java/cn/edu/hust/dao/PersonHibernateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="e#665#666#0" expanded="true" />
             <element signature="e#734#735#0" expanded="true" />
@@ -1105,11 +1122,27 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="386">
-            <caret line="1221" column="4" lean-forward="false" selection-start-line="1221" selection-start-column="4" selection-end-line="1221" selection-end-column="16" />
+          <first_editor relative-caret-position="499">
+            <caret line="1275" column="40" lean-forward="true" selection-start-line="1275" selection-start-column="40" selection-end-line="1275" selection-end-column="40" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/applicationContext-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13-CacheData/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
