@@ -1205,10 +1205,66 @@
    
    GemfireCacheManager
    
+ 使用Ehcache配置如下
+ 1。使用JavaConfig进行配置如下:
+ ![Ehcache的Java配置](img/Ehcache的Java配置.png)
+ 2.配置Ehcache的xml配置
+ ![ehcache的xml配置](img/ehcache的xml配置.png)
+ 使用Redis缓存
+  Redis可以用来为Spring缓存抽象机制存储缓存条目,Spring Data Redis提供了RedisCacheManger
+  
+  这是CacheManager的一个实现,RedisCacheManager会与一个Redis服务器协作,并通过RedisTemplate
+  
+  将缓存条目存储在Redis中。
+  
+ 使用组合缓存
+ ![组合多个缓存](img/组合多个缓存.png)
+### 为方法添加注解以支持缓存
+ Spring的缓存抽象在很大程度上是围绕切面构建的。
  
+ Spring提供了四种注解来声明缓存规则:
+ ![SpringCache缓存规则](img/SpringCache缓存规则.png)
+#### 填充缓存
+ @CachePut和@Cacheable注解共有的属性:
+ ![两个注解共有的属性](img/两个注解共有的属性.png)
+ 在方法中使用缓存注解如下:
+ ![在方法中使用缓存注解](img/在方法中使用缓存注解.png)
+ 当findOne()被调用时,缓存切面会拦截调用并在缓存中查找之前以名为 personCache存储的返回值。
  
+ 缓存的key是传递到findOne()方法中的id参数.如果key能够被找到,就会返回找到的值,否者就会调用方法。
  
+ 当为接口方法添加注解后,@Cacheable注解将会被这个接口的所有实现类所继承。
  
+ 将值放在缓存中
+  @CachePut注解的方法始终都会被调用,而返回值都会被放在缓存中.例如:
+  ![CachePut注解在方法中的使用](img/CachePut注解在方法中的使用.png)
+  有可能这个实例保存在数据库中后,可能需要立即使用保存在缓存中那么可能比较好。
+  
+  这里有一个问题:缓存的key.通过上面的例子,缓存的key默认为一个实例，这样时候显得很诡异？
+  
+ 自定义缓存key
+  
+  @Cacheable和@CachePut都有一个key属性,这个属性能够替换默认的key，它是通过一个spel表达式计算出来的。
+  
+  SpEL中可用的缓存元数据
+  ![定义缓存规则的SpEL规则](img/定义缓存规则的SpEL规则.png)
+ 对于上述的缓存例子,我们可以定义如下的以id为key的缓存:
+ ![自定义缓存](img/自定义缓存.png)
  
+ 条件化缓存
+   
+  @Cacheable和@CachePut提供了两个属性以实现条件化缓存:unless和condition,这两个属性都接受SpEL表达式。
+  
+  如果unless缓存的SpEL表达式计算结果为true,那么缓存方法返回的数据不会放在缓存中,与此相反,condition计算
+  
+  结果如果为false不会放在缓存中。
+  
+  unless属性只能阻止将对象放进缓存,但是在这个方法调用的时候,依然会去缓存中进行查找,如果找到匹配的值,就会返回得到的
+  
+  值。如果condition的表达式为false,那么在这个方法调用的过程中,缓存是被禁用的。
+#### 移除缓存条目
+ 当缓存数据过期,这个时候将会移除缓存数据。使用@CacheEvict,不同于前面两个注解，这个注解可以放在返回值为void的方法上。
  
- 
+ @CacheEvict的属性如下
+ ![CacheEvict属性](img/@CacheEvict属性.png)
+### 使用XML声明缓存

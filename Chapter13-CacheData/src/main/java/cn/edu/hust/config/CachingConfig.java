@@ -1,11 +1,17 @@
 package cn.edu.hust.config;
-import net.sf.ehcache.CacheManager;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
+import org.springframework.cache.jcache.JCacheCacheManager;
+import org.springframework.cache.support.CompositeCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 @EnableCaching //使用该注解开启缓存
@@ -20,18 +26,35 @@ public class CachingConfig {
         return new ConcurrentMapCacheManager();
     }**/
 
-    //这里使用EhCache,配置EhCacheCacheManager
+    //这里使用EhCache,配置EhCacheCacheManager，Spring的EhCacheCacheManager需要注入Ehcache的CacheManager实例
     @Bean
-    public EhCacheCacheManager cacheManager(CacheManager cm)
+    public EhCacheCacheManager cacheManager(net.sf.ehcache.CacheManager cm)
     {
         return new EhCacheCacheManager(cm);
     }
 
+    //配置EhCacheManagerFactoryBean用于创建Ehcache的CacheManager实例
     @Bean
     public EhCacheManagerFactoryBean ehcache()
     {
         EhCacheManagerFactoryBean ehCacheManagerFactoryBean=new EhCacheManagerFactoryBean();
-        ehCacheManagerFactoryBean.setConfigLocation(new ClassPathResource("classpah:cache/ehcache.xml"));
+        //这里需要配置ehcache的xml文件在哪里
+        ehCacheManagerFactoryBean.setConfigLocation(
+                new ClassPathResource("classpah:cache/ehcache.xml"));
         return ehCacheManagerFactoryBean;
     }
+
+
+    /**
+    //组合多个CacheManager
+    @Bean
+    public CacheManager cacheManger(net.sf.ehcache.CacheManager cm,javax.cache.CacheManager jcm)
+    {
+        CompositeCacheManager compositeCacheManager=new CompositeCacheManager();
+        List<CacheManager> managerList=new ArrayList<CacheManager>();
+        managerList.add(new JCacheCacheManager((jcm)));
+        managerList.add(new EhCacheCacheManager(cm));
+        compositeCacheManager.setCacheManagers(managerList);
+        return compositeCacheManager;
+    }**/
 }

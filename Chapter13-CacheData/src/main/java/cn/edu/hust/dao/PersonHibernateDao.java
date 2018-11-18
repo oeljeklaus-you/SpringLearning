@@ -3,6 +3,7 @@ package cn.edu.hust.dao;
 import cn.edu.hust.bean.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import javax.inject.Inject;
@@ -22,6 +23,7 @@ public class PersonHibernateDao {
         return sessionFactory.openSession();
     }
 
+    @Cacheable("personCache")
     public Person findOne(int id)
     {
         return (Person) currentSession().get(Person.class,id);
