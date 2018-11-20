@@ -1,0 +1,6 @@
+cn/edu/hust/bean/Person.class
+cn/edu/hust/config/CachingConfig.class
+cn/edu/hust/dao/PersonHibernateDao.class
+cn/edu/hust/controller/HomeController.class
+cn/edu/hust/service/PersonServiceImpl.class
+cn/edu/hust/config/JDBCConfig.class

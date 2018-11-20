@@ -1,0 +1,6 @@
+<ehcache>
+    <!--配置名为personCache的缓存,它的最大堆为50m，存活时间为100s-->
+    <cache name="personCache" maxBytesLocalHeap="50m" timeToLiveSeconds="100">
+
+    </cache>
+</ehcache>

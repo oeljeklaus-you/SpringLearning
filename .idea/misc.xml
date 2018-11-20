@@ -7,12 +7,19 @@
     <file type="web" url="file://$PROJECT_DIR$/Chapter11-JPA" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter12-NOSQL" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter13-CacheData" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter17-Message" />
+    <file type="web" url="file://$PROJECT_DIR$/ChapterMessage" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ChapterMessage/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="NodePackageJsonFileManager">

@@ -15,6 +15,7 @@
         <module name="Chapter11-JPA" />
         <module name="Chapter12-NOSQL" />
         <module name="Chapter13-CacheData" />
+        <module name="Chapter17-Message" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,8 @@
       <module name="Chapter11-JPA" target="1.7" />
       <module name="Chapter12-NOSQL" target="1.7" />
       <module name="Chapter13-CacheData" target="1.7" />
+      <module name="Chapter17-Message" target="1.7" />
+      <module name="ChapterMessage" target="1.7" />
       <module name="SpringLearning" target="1.5" />
     </bytecodeTargetLevel>
   </component>

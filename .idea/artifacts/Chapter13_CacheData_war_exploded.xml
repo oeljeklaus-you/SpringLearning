@@ -38,7 +38,6 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:2.0.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.0.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:5.0.7.RELEASE" />
-          <element id="library" level="project" name="Maven: javax.cache:cache-api:1.1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.2.RELEASE" />

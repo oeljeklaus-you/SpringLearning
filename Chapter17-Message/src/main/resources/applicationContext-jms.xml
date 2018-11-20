@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:c="http://www.springframework.org/schema/c" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--配置方法的一种
+    <bean id="connectionFactory" class="org.apache.activemq.spring.ActiveMQConnectionFactory"/>-->
+
+    <!--另一种配置方式,标准的activemq配置,brokerURL用于指定代理的URL-->
+    <amq:connectionFactory id="connectionFactory" brokerURL="tcp://localhost:8161" />
+
+    <!--配置队列的名称
+    <bean id="queue" class="org.apache.activemq.command.ActiveMQQueue" name="queue"/>-->
+
+    <!--配置配置主题的名称
+    <bean id="topic" class="org.apache.activemq.command.ActiveMQTopic" name="queue"/>-->
+
+    <!--通过ActiveMQ来进行配置,使用physicalName来指定消息通道的名称-->
+    <amq:queue id="personQueue"  physicalName="personQueue"/>
+
+    <amq:topic id="personTopic" physicalName="personTopic"/>
+
+    <!--使用消息转化器-->
+    <bean id="jackson2MessageConverter"
+          class="org.springframework.jms.support.converter.MappingJackson2MessageConverter"/>
+
+    <!--配置消息转化器-->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate"
+          c:_0-ref="connectionFactory" p:defaultDestination-ref="personTopic"
+          p:messageConverter-ref="jackson2MessageConverter"
+    />
+
+
+
+</beans>

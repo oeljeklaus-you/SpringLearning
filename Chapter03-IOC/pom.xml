@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>SpringLearning</artifactId>
-        <groupId>cn.edu.cn.edu.hust</groupId>
+        <groupId>cn.edu.hust</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>Chapter03-IOC</artifactId>
