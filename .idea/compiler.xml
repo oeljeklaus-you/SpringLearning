@@ -10,6 +10,7 @@
         <module name="Chapter03-IOC" />
         <module name="Chapter04-AOP" />
         <module name="Chapter05-WebAPP" />
+        <module name="Chapter06-TX" />
         <module name="Chapter07-WebAPP" />
         <module name="Chapter10-JDBC" />
         <module name="Chapter11-JPA" />
@@ -23,6 +24,7 @@
       <module name="Chapter03-IOC" target="1.5" />
       <module name="Chapter04-AOP" target="1.5" />
       <module name="Chapter05-WebAPP" target="1.7" />
+      <module name="Chapter06-TX" target="1.5" />
       <module name="Chapter07-WebAPP" target="1.7" />
       <module name="Chapter10-JDBC" target="1.7" />
       <module name="Chapter11-JPA" target="1.7" />

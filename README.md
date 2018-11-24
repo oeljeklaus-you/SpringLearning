@@ -282,11 +282,11 @@
  
  首先是在XML配置aop切面配置文件如下
  
- ![aop xml配置](img/aop xml配置.png)
+ ![aop xml配置](img/aopxml配置.png)
  
  对于环绕通知类似与传递参数与注解，这里我们仅仅需要修改配置文件即可。
  
- ![aop xml配置传递参数](img/aop xml配置传递参数.png)
+ ![aop xml配置传递参数](img/aopxml配置传递参数.png)
  
 ## 构建Spring web应用程序
 ### Spring MVC起步

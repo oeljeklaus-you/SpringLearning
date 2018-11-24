@@ -17,8 +17,8 @@
         <module>Chapter11-JPA</module>
         <module>Chapter12-NOSQL</module>
         <module>Chapter13-CacheData</module>
-        <module>ChapterMessage</module>
         <module>Chapter17-Message</module>
+        <module>Chapter06-TX</module>
     </modules>
     <packaging>pom</packaging>
 
