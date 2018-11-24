@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter17-Message/src/main/java/cn/edu/hust/bean/MessageAlterHandler.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Chapter17-Message/src/main/java/cn/edu/hust/service/impl/AlertServiceImpl.java" afterPath="$PROJECT_DIR$/Chapter17-Message/src/main/java/cn/edu/hust/service/impl/AlertServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/Chapter17-Message/src/main/resources/applicationContext-jms.xml" afterPath="$PROJECT_DIR$/Chapter17-Message/src/main/resources/applicationContext-jms.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="415">
-                <caret line="284" column="1" lean-forward="false" selection-start-line="284" selection-start-column="1" selection-end-line="284" selection-end-column="1" />
+              <first_editor relative-caret-position="491">
+                <caret line="288" column="25" lean-forward="true" selection-start-line="288" selection-start-column="25" selection-end-line="288" selection-end-column="25" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -551,7 +547,7 @@
       <workItem from="1542707733689" duration="1877000" />
       <workItem from="1542709761303" duration="5471000" />
       <workItem from="1542885674135" duration="390000" />
-      <workItem from="1543042081708" duration="71000" />
+      <workItem from="1543042081708" duration="161000" />
     </task>
     <servers />
   </component>
@@ -588,7 +584,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135819000" />
+    <option name="totallyTimeSpent" value="135909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1022,8 +1018,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="415">
-            <caret line="284" column="1" lean-forward="false" selection-start-line="284" selection-start-column="1" selection-end-line="284" selection-end-column="1" />
+          <first_editor relative-caret-position="491">
+            <caret line="288" column="25" lean-forward="true" selection-start-line="288" selection-start-column="25" selection-end-line="288" selection-end-column="25" />
             <folding />
           </first_editor>
           <second_editor />
