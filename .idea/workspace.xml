@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/doc/spring--day03笔记.doc" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter04-AOP/doc/spring--day02笔记.doc" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -160,7 +158,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="415" />
-    <option name="y" value="149" />
+    <option name="y" value="148" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -218,7 +216,7 @@
             <path>
               <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter06-TX" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter04-AOP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,11 +248,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter04-AOP/doc" />
       <recent name="$PROJECT_DIR$/Chapter06-TX/doc" />
       <recent name="$PROJECT_DIR$/Chapter06-TX/src/main/resources" />
       <recent name="$PROJECT_DIR$/Chapter17-Message/src/main/resources" />
       <recent name="$PROJECT_DIR$/Chapter13-CacheData/src/main/webapp/WEB-INF/view" />
-      <recent name="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.edu.hust.bean" />
@@ -552,7 +550,7 @@
       <workItem from="1542709761303" duration="5471000" />
       <workItem from="1542885674135" duration="390000" />
       <workItem from="1543042081708" duration="526000" />
-      <workItem from="1543049028337" duration="7343000" />
+      <workItem from="1543049028337" duration="7417000" />
     </task>
     <servers />
   </component>
@@ -589,10 +587,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143617000" />
+    <option name="totallyTimeSpent" value="143691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="415" y="149" width="1440" height="877" extended-state="0" />
+    <frame x="415" y="148" width="1440" height="877" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29383314" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
