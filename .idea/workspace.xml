@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/Chapter06-TX.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/dao/AccountDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/dao/impl/AccountDaoImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/domain/Account.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/service/AccountService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/service/AccountServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-beans.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/src/test/java/cn/edu/hust/AccountTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter06-TX/doc/spring--day03笔记.doc" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" afterPath="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,28 +42,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter06-TX/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext-tx.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -148,8 +113,8 @@
         <option value="$PROJECT_DIR$/Chapter06-TX/src/main/java/cn/edu/hust/dao/impl/AccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-beans.xml" />
         <option value="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" />
         <option value="$PROJECT_DIR$/Chapter06-TX/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml" />
       </list>
     </option>
   </component>
@@ -193,9 +158,11 @@
     <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="415" />
+    <option name="y" value="149" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,19 +220,6 @@
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
               <item name="Chapter06-TX" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter06-TX" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter06-TX" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -296,16 +250,17 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter06-TX/doc" />
       <recent name="$PROJECT_DIR$/Chapter06-TX/src/main/resources" />
       <recent name="$PROJECT_DIR$/Chapter17-Message/src/main/resources" />
       <recent name="$PROJECT_DIR$/Chapter13-CacheData/src/main/webapp/WEB-INF/view" />
       <recent name="$PROJECT_DIR$/Chapter13-CacheData/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.edu.hust.bean" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter06-TX/doc" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
@@ -597,20 +552,11 @@
       <workItem from="1542709761303" duration="5471000" />
       <workItem from="1542885674135" duration="390000" />
       <workItem from="1543042081708" duration="526000" />
-      <workItem from="1543049028337" duration="6935000" />
+      <workItem from="1543049028337" duration="7343000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountTest_test - 2018.11.24 at 19h 03m 12s.xml">
-      <configuration name="AccountTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest_test - 2018.11.24 at 19h 10m 15s.xml">
-      <configuration name="AccountTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest_test - 2018.11.24 at 19h 11m 20s.xml">
-      <configuration name="AccountTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountTest_test - 2018.11.24 at 19h 12m 11s.xml">
       <configuration name="AccountTest.test" configurationId="JUnit" />
     </history-entry>
@@ -632,13 +578,21 @@
     <history-entry file="AccountTest_test - 2018.11.24 at 20h 05m 24s.xml">
       <configuration name="AccountTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AccountTest_test - 2018.11.24 at 20h 11m 56s.xml">
+      <configuration name="AccountTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest_test - 2018.11.24 at 20h 12m 44s.xml">
+      <configuration name="AccountTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest_test - 2018.11.24 at 20h 12m 51s.xml">
+      <configuration name="AccountTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143209000" />
+    <option name="totallyTimeSpent" value="143617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="415" y="149" width="1440" height="877" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29383314" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -651,7 +605,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -659,11 +613,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3465473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2853688" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -720,7 +674,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Chapter06-TX/src/test/java/cn/edu/hust/AccountTest.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1101,27 +1063,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06-TX/src/test/java/cn/edu/hust/AccountTest.java">
+    <entry file="file://$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="760">
+          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter06-TX/src/main/resources/applicationContext-tx.xml">
+    <entry file="file://$PROJECT_DIR$/Chapter06-TX/src/test/java/cn/edu/hust/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="342">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter06-TX/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="758">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>

@@ -38,7 +38,7 @@
     </tx:advice>
 
     <!--配置AOP进行事务级别的管理-->
-    <aop:config>
+    <aop:config proxy-target-class="true">
         <aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.edu.hust.service..*.*(..))"/>
     </aop:config>
 </beans>
