@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d014a1fb-a628-4f2f-be84-5d0b86632f13" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter03-IOC/doc/spring--day01笔记.doc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10-JDBC/doc/spring--day02笔记.doc" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -216,7 +216,7 @@
             <path>
               <item name="SpringLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter03-IOC" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter10-JDBC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,11 +248,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter10-JDBC/doc" />
       <recent name="$PROJECT_DIR$/Chapter03-IOC/doc" />
       <recent name="$PROJECT_DIR$/Chapter04-AOP/doc" />
       <recent name="$PROJECT_DIR$/Chapter06-TX/doc" />
       <recent name="$PROJECT_DIR$/Chapter06-TX/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Chapter17-Message/src/main/resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.edu.hust.bean" />
@@ -550,7 +550,7 @@
       <workItem from="1542709761303" duration="5471000" />
       <workItem from="1542885674135" duration="390000" />
       <workItem from="1543042081708" duration="526000" />
-      <workItem from="1543049028337" duration="7504000" />
+      <workItem from="1543049028337" duration="7632000" />
     </task>
     <servers />
   </component>
@@ -587,7 +587,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143778000" />
+    <option name="totallyTimeSpent" value="143906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="414" y="148" width="1440" height="877" extended-state="0" />
