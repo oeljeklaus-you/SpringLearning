@@ -9,7 +9,9 @@
 
     <bean id="audience" class="cn.edu.hust.xmlAOP.Audience"></bean>
     <!--xml配置aop,aop配置元素必须在config内配置-->
-    <aop:config>
+
+    <!--开启proxy-target-class="true"将将会启用CGLIB代理-->
+    <aop:config proxy-target-class="true">
         <aop:pointcut id="perform" expression="execution(* cn.edu.hust.*.*.perform(..))"/>
         <aop:pointcut id="count" expression="execution(* cn.edu.hust.*.*.count(int)) and args(int)"/>
         <!--声明切点，首先需要创建切面的bean-->

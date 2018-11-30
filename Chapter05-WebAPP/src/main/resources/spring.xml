@@ -8,5 +8,8 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="cn.edu.hust.controller"/>
 
-
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
 </beans>

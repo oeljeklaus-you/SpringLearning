@@ -31,8 +31,7 @@
 
     <!--配置消息转化器-->
     <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate"
-          c:_0-ref="connectionFactory" p:defaultDestination-ref="personTopic"
-    />
+          c:_0-ref="connectionFactory" p:defaultDestination-ref="personTopic"/>
 
 
 

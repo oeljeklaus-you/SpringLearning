@@ -1,0 +1,4 @@
+cn/edu/hust/bean/Person.class
+cn/edu/hust/bean/MessageAlterHandler.class
+cn/edu/hust/service/impl/AlertServiceImpl.class
+cn/edu/hust/service/AlertService.class

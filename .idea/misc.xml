@@ -7,6 +7,8 @@
     <file type="web" url="file://$PROJECT_DIR$/Chapter11-JPA" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter12-NOSQL" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter13-CacheData" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter15-RMI" />
+    <file type="web" url="file://$PROJECT_DIR$/Chapter15-RMI-Client" />
     <file type="web" url="file://$PROJECT_DIR$/Chapter17-Message" />
     <file type="web" url="file://$PROJECT_DIR$/ChapterMessage" />
   </component>

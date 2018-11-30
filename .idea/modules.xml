@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter11-JPA/Chapter11-JPA.iml" filepath="$PROJECT_DIR$/Chapter11-JPA/Chapter11-JPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter12-NOSQL/Chapter12-NOSQL.iml" filepath="$PROJECT_DIR$/Chapter12-NOSQL/Chapter12-NOSQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter13-CacheData/Chapter13-CacheData.iml" filepath="$PROJECT_DIR$/Chapter13-CacheData/Chapter13-CacheData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter15-RMI/Chapter15-RMI.iml" filepath="$PROJECT_DIR$/Chapter15-RMI/Chapter15-RMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter15-RMI-Client/Chapter15-RMI-Client.iml" filepath="$PROJECT_DIR$/Chapter15-RMI-Client/Chapter15-RMI-Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter17-Message/Chapter17-Message.iml" filepath="$PROJECT_DIR$/Chapter17-Message/Chapter17-Message.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringLearning.iml" filepath="$PROJECT_DIR$/SpringLearning.iml" />
     </modules>

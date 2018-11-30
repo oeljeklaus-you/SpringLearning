@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Chapter15-RMI-Client:war">
+    <output-path>$PROJECT_DIR$/Chapter15-RMI-Client/target</output-path>
+    <root id="archive" name="Chapter15-RMI-Client.war">
+      <element id="artifact" artifact-name="Chapter15-RMI-Client:war exploded" />
+    </root>
+  </artifact>
+</component>

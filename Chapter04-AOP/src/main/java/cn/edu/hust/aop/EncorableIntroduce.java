@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class EncorableIntroduce {
     /**
-     * @DeclareParents注解将Encorable接口注入到MoiveWatch bean中呢，注解所标注的静态属性指明了要引入了接口
+     * @DeclareParents注解将Encorable接口注入到MoiveWatchbean中呢，注解所标注的静态属性指明了要引入了接口
      * value属性指定那种类型的bean要引入接口
      * defaultImpl属性指定为引入功能提供实现的类
      */

@@ -21,7 +21,7 @@ public class Person {
     /**
      * @Before注解是前置通知，在目标方法之前执行
      */
-    @Before("watch()")
+    @Before( value = "watch()")
     public void call()
     {
         System.out.println("person call phone for ticket");

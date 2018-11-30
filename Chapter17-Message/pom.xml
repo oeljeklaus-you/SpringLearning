@@ -13,8 +13,6 @@
     <packaging>war</packaging>
 
     <name>Chapter17-Message Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -79,6 +77,8 @@
             <artifactId>spring-jms</artifactId>
             <version>5.0.2.RELEASE</version>
         </dependency>
+
+
     </dependencies>
 
     <build>

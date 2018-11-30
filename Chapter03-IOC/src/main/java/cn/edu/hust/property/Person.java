@@ -14,6 +14,7 @@ public class Person {
 
     @Autowired
     Environment environment;
+
     private String name=environment.getProperty("name");
     private int age=environment.getProperty("age",Integer.class);
 

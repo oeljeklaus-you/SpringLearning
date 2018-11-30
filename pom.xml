@@ -19,6 +19,8 @@
         <module>Chapter13-CacheData</module>
         <module>Chapter17-Message</module>
         <module>Chapter06-TX</module>
+        <module>Chapter15-RMI</module>
+        <module>Chapter15-RMI-Client</module>
     </modules>
     <packaging>pom</packaging>
 

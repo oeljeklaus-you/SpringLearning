@@ -14,6 +14,8 @@
         <property name="maxUploadSize" value="5242880"/>
         <property name="maxUploadSizePerFile" value="5242880"/>
     </bean>
+
+
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix">
