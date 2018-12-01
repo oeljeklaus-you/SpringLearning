@@ -13,4 +13,6 @@ public interface AccountDao {
     List<Account> findList();
 
     void saveAccount(Account account);
+
+    Account finOne(int id);
 }

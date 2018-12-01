@@ -29,4 +29,9 @@ public class AccountServiceImpl implements AccountService {
     public void saveAccount(Account account) {
         accountDao.saveAccount(account);
     }
+
+    @Override
+    public Account findOne(int id) {
+        return accountDao.finOne(id);
+    }
 }

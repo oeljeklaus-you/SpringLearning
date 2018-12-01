@@ -9,4 +9,6 @@ public interface AccountService {
     List<Account> findList();
 
     void saveAccount(Account account);
+
+    Account findOne(int id);
 }
