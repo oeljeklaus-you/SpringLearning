@@ -21,6 +21,7 @@
         <module>Chapter06-TX</module>
         <module>Chapter15-RMI</module>
         <module>Chapter15-RMI-Client</module>
+        <module>Chapter16-REST-HelloWorld</module>
     </modules>
     <packaging>pom</packaging>
 

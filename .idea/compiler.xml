@@ -18,6 +18,7 @@
         <module name="Chapter13-CacheData" />
         <module name="Chapter15-RMI" />
         <module name="Chapter15-RMI-Client" />
+        <module name="Chapter16-REST-HelloWorld" />
         <module name="Chapter17-Message" />
       </profile>
     </annotationProcessing>
@@ -34,6 +35,7 @@
       <module name="Chapter13-CacheData" target="1.7" />
       <module name="Chapter15-RMI" target="1.7" />
       <module name="Chapter15-RMI-Client" target="1.7" />
+      <module name="Chapter16-REST-HelloWorld" target="1.7" />
       <module name="Chapter17-Message" target="1.7" />
       <module name="ChapterMessage" target="1.7" />
       <module name="SpringLearning" target="1.5" />

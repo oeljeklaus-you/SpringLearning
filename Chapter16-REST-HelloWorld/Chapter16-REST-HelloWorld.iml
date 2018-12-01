@@ -42,7 +42,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.12" level="project" />
-    <orderEntry type="library" name="Maven: com.caucho:hessian:4.0.51" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.2.RELEASE" level="project" />
