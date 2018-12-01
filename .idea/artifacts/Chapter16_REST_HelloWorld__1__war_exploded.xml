@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Chapter16-REST-HelloWorld:war exploded">
-    <output-path>$PROJECT_DIR$/Chapter16-REST-MessageConverter/target/Chapter16-REST-HelloWorld</output-path>
+  <artifact type="exploded-war" name="Chapter16-REST-HelloWorld (1):war exploded">
+    <output-path>$PROJECT_DIR$/Chapter16-REST-MessageConverter/target/Chapter16-REST-MessageConverter</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Chapter16-REST-HelloWorld" />
+          <element id="module-output" name="Chapter16-REST-HelloWorld (1)" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.0.2.RELEASE" />
@@ -19,6 +19,9 @@
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.12" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.2.RELEASE" />
@@ -29,9 +32,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Chapter16-REST-MessageConverter/target/Chapter16-REST-HelloWorld/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/Chapter16-REST-MessageConverter/target/Chapter16-REST-MessageConverter/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Chapter16-REST-HelloWorld/web/Web" />
+      <element id="javaee-facet-resources" facet="Chapter16-REST-HelloWorld (1)/web/Web" />
     </root>
   </artifact>
 </component>

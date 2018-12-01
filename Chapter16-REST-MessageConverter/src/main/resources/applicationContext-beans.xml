@@ -10,8 +10,4 @@
     <context:component-scan base-package="cn.edu.hust"></context:component-scan>
 
 
-    <bean id="contentNegotiationManager"
-          class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"
-          p:defaultContentType="application/json"/>
-
 </beans>

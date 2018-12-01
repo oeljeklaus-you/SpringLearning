@@ -18,8 +18,14 @@
         <module name="Chapter13-CacheData" />
         <module name="Chapter15-RMI" />
         <module name="Chapter15-RMI-Client" />
-        <module name="Chapter16-REST-HelloWorld" />
+        <module name="Chapter16-REST-HelloWorld (1)" />
         <module name="Chapter17-Message" />
+      </profile>
+      <profile name="Annotation profile for SpringLearning" enabled="true">
+        <sourceOutputDir name="../Chapter16-REST-MessageConverter/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Chapter16-REST-MessageConverter/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Chapter16-REST-HelloWorld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,6 +42,7 @@
       <module name="Chapter15-RMI" target="1.7" />
       <module name="Chapter15-RMI-Client" target="1.7" />
       <module name="Chapter16-REST-HelloWorld" target="1.7" />
+      <module name="Chapter16-REST-HelloWorld (1)" target="1.7" />
       <module name="Chapter17-Message" target="1.7" />
       <module name="ChapterMessage" target="1.7" />
       <module name="SpringLearning" target="1.5" />

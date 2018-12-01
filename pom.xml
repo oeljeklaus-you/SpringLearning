@@ -22,6 +22,7 @@
         <module>Chapter15-RMI</module>
         <module>Chapter15-RMI-Client</module>
         <module>Chapter16-REST-HelloWorld</module>
+        <module>Chapter16-REST-MessageConverter</module>
     </modules>
     <packaging>pom</packaging>
 
